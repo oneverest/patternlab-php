@@ -1,0 +1,10 @@
+{
+  "flag": [
+    { "class": "ae" },
+    { "class": "france" },
+    { "class": "cn" },
+    { "class": "ru" },
+    { "class": "uk" },
+    { "class": "america" }
+  ]
+}

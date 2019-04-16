@@ -1,0 +1,7 @@
+{
+  "divider": [
+    { "class": "", "text": "" },
+    { "class": "horizontal", "text": "OR" },
+    { "class": "vertical", "text": "AND" }
+  ]
+}

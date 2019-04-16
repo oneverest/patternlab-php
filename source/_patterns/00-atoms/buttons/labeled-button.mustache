@@ -1,0 +1,23 @@
+{{#labeled-button}}
+<div class="ui {{ class }} labeled button" tabindex="-1">
+  {{#prev-label}}
+  <a class="ui {{ class }} label">
+  {{{ text }}}
+  </a>
+  {{/prev-label}}
+  {{#button}}
+  <div class="ui {{ class }} button">
+    {{{ before }}}
+    {{#icon}}
+    <i class="{{ class }} icon"></i>
+    {{/icon}}
+    {{{ after }}}
+  </div>
+  {{/button}}
+  {{#post-label}}
+  <a class="ui {{ class}} label">
+  {{{ text }}}
+  </a>
+  {{/post-label}}
+</div>
+{{/labeled-button}}

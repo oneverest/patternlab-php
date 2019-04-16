@@ -1,0 +1,21 @@
+{
+  "btns": [
+    { "text": "Follow", "class": "ui button" },
+    { "text": "Save", "class": "ui button primary" },
+    { "text": "Okay", "class": "ui button secondary" }
+  ],
+  "animated-button": [
+    {
+      "showContent": "Next",
+      "hiddenContent": "<i class=\"right arrow icon\"></i>"
+    },
+    {
+      "showContent": "<i class=\"shop icon\"></i>",
+      "hiddenContent": "Shop"
+    },
+    {
+      "showContent": "Sign-up for a Pro account",
+      "hiddenContent": "$12.99 a month"
+    }
+  ]
+}

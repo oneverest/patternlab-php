@@ -1,0 +1,22 @@
+{
+  "icon-button": [
+    { "class": "icon", "icon": { "before": "", "class": "cloud", "after": "" } },
+    { "class": "labeled icon", "icon": { "before": "", "class": "pause", "after": "Pause" } },
+    { "class": "labeled icon", "icon": { "before": "", "class": "right arrow", "after": "Next" } },
+    { "class": "labeled icon", "icon": { "before": "", "class": "user", "after": "Add Friend" } },
+    { "class": "active", "icon": { "before": "", "class": "user", "after": "Follow" } },
+    { "class": "disabled", "icon": { "before": "", "class": "user", "after": "Followed" } },
+    { "class": "facebook", "icon": { "before": "", "class": "facebook", "after": "Facebook" } },
+    { "class": "twitter", "icon": { "before": "", "class": "twitter", "after": "Twitter" } },
+    { "class": "google plus", "icon": { "before": "", "class": "google plus", "after": "Google Plus" } },
+    { "class": "vk", "icon": { "before": "", "class": "vk", "after": "VK" } },
+    { "class": "linkedin", "icon": { "before": "", "class": "linkedin", "after": "LinkedIn" } },
+    { "class": "instagram", "icon": { "before": "", "class": "instagram", "after": "Instagram" } },
+    { "class": "youtube", "icon": { "before": "", "class": "youtube", "after": "YouTube" } },
+    { "class": "circular icon", "icon": { "before": "", "class": "settings", "after": "" } },
+    { "class": "circular facebook icon", "icon": { "before": "", "class": "facebook", "after": "" } },
+    { "class": "circular twitter icon", "icon": { "before": "", "class": "twitter", "after": "" } },
+    { "class": "circular linkedin icon", "icon": { "before": "", "class": "linkedin", "after": "" } },
+    { "class": "circular google plus icon", "icon": { "before": "", "class": "google plus", "after": "" } }
+  ]
+}

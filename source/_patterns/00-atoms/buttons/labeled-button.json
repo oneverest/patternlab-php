@@ -1,0 +1,73 @@
+{
+  "labeled-button": [
+    {
+      "class": "",
+      "post-label": {
+        "class": "basic",
+        "text": "2,048"
+      },
+      "button": {
+        "class": "",
+        "after": "Like",
+        "icon": {
+          "class": "heart"
+        }
+      }
+    },
+    {
+      "class": "left",
+      "prev-label": {
+        "class": "basic right pointing",
+        "text": "2,048"
+      },
+      "button": {
+        "class": "",
+        "after": "Like",
+        "icon": {
+          "class": "heart"
+        }
+      }
+    },
+    {
+      "class": "left",
+      "prev-label": {
+        "class": "basic",
+        "text": "1,048"
+      },
+      "button": {
+        "class": "icon",
+        "icon": {
+          "class": "fork"
+        }
+      }
+    },
+    {
+      "class": "",
+      "post-label": {
+        "class": "basic red left pointing",
+        "text": "1,048"
+      },
+      "button": {
+        "class": "red",
+        "after": "Like",
+        "icon": {
+          "class": "heart"
+        }
+      }
+    },
+    {
+      "class": "",
+      "post-label": {
+        "class": "basic blue left pointing",
+        "text": "1,048"
+      },
+      "button": {
+        "class": "basic blue",
+        "after": "Forks",
+        "icon": {
+          "class": "fork"
+        }
+      }
+    }
+  ]
+}

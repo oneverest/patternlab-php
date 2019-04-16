@@ -1,0 +1,132 @@
+{
+  "group-variations-button": [
+    {
+      "class": "vertical",
+      "buttons": [
+        { "class": "", "text": "Feed" },
+        { "class": "", "text": "Messages" },
+        { "class": "", "text": "Events" },
+        { "class": "", "text": "Photos" }
+      ]
+    },
+    {
+      "class": "icon",
+      "buttons": [
+        { "class": "", "text": "<i class=\"play icon\"></i>" },
+        { "class": "", "text": "<i class=\"pause icon\"></i>" },
+        { "class": "", "text": "<i class=\"shuffle icon\"></i>" }
+      ]
+    },
+    {
+      "class": "vertical labeled icon",
+      "buttons": [
+        { "class": "", "text": "<i class=\"pause icon\"></i>Pause" },
+        { "class": "", "text": "<i class=\"play icon\"></i>Play" },
+        { "class": "", "text": "<i class=\"shuffle icon\"></i>Shuffle" }
+      ]
+    },
+    {
+      "class": "",
+      "buttons": [
+        { "class": "labeled icon", "text": "<i class=\"left chevron icon\"></i>Back" },
+        { "class": "", "text": "<i class=\"stop icon\"></i>Stop" },
+        { "class": "right labeled icon", "text": "Forward<i class=\"right chevron icon\"></i>" }
+      ]
+    },
+    {
+      "class": "three",
+      "buttons": [
+        { "class": "", "text": "Overview" },
+        { "class": "", "text": "Specs" },
+        { "class": "", "text": "Support" }
+      ]
+    },
+    {
+      "class": "blue",
+      "buttons": [
+        { "class": "", "text": "One" },
+        { "class": "", "text": "Two" },
+        { "class": "", "text": "Three" }
+      ]
+    },
+    {
+      "class": "vertical basic",
+      "buttons": [
+        { "class": "", "text": "One" },
+        { "class": "", "text": "Two" },
+        { "class": "", "text": "Three" }
+      ]
+    },
+    {
+      "class": "basic",
+      "buttons": [
+        { "class": "", "text": "One" },
+        { "class": "", "text": "Two" },
+        { "class": "", "text": "Three" }
+      ]
+    },
+    {
+      "class": "",
+      "buttons": [
+        { "class": "red", "text": "One" },
+        { "class": "blue", "text": "Two" },
+        { "class": "green", "text": "Three" }
+      ]
+    },
+    {
+      "class": "",
+      "buttons": [
+        { "class": "red basic", "text": "One" },
+        { "class": "blue basic", "text": "Two" },
+        { "class": "green basic", "text": "Three" }
+      ]
+    },
+    {
+      "class": "large",
+      "buttons": [
+        { "class": "", "text": "One" },
+        { "class": "", "text": "Two" },
+        { "class": "", "text": "Three" }
+      ]
+    },
+    {
+      "class": "small basic icon",
+      "buttons": [
+        { "class": "", "text": "<i class=\"file icon\"></i>" },
+        { "class": "", "text": "<i class=\"save icon\"></i>" },
+        { "class": "", "text": "<i class=\"upload icon\"></i>" },
+        { "class": "", "text": "<i class=\"download icon\"></i>" }
+      ]
+    },
+    {
+      "class": "large",
+      "buttons": [
+        { "class": "", "text": "One", "divider": { "class": "or", "text": "or" } },
+        { "class": "", "text": "Two", "divider": "" }
+      ]
+    },
+    {
+      "class": "icon",
+      "buttons": [
+        { "class": "", "text": "<i class=\"align left icon\"></i>" },
+        { "class": "", "text": "<i class=\"align center icon\"></i>" },
+        { "class": "", "text": "<i class=\"align right icon\"></i>" },
+        { "class": "", "text": "<i class=\"align justify icon\"></i>" }
+      ]
+    },
+    {
+      "class": "",
+      "buttons": [
+        { "class": "", "text": "Cancel", "divider": { "class": "or", "text": "or" } },
+        { "class": "positive", "text": "Save" }
+      ]
+    },
+    {
+      "class": "",
+      "buttons": [
+        { "class": "", "text": "un", "divider": { "class": "or", "text": "ou" } },
+        { "class": "positive", "text": "deux" }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,41 @@
+{
+  "name": "patternlab-semantic-mustache",
+  "version": "1.0.0",
+  "description": "![license](https://img.shields.io/github/license/pattern-lab/patternlab-php.svg) [![Packagist](https://img.shields.io/packagist/v/pattern-lab/edition-mustache-standard.svg)](https://packagist.org/packages/pattern-lab/edition-mustache-standard) [![Gitter](https://img.shields.io/gitter/room/pattern-lab/php.svg)](https://gitter.im/pattern-lab/php)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "clean:semantic": "rimraf semantic/dist/*",
+    "clean": "npm-run-all --parallel clean:*",
+    "prewatch": "php core/console --generate && cp node_modules/jquery/dist/jquery.min.js source/js/ && cd semantic/ && gulp build",
+    "watch": "npm-run-all --parallel watch:*",
+    "watch:patternlab": "node ./index.js",
+    "watch:semantic-src": "cd semantic/ && gulp watch",
+    "watch:semantic-css": "nodemon --watch semantic/dist/semantic.min.css --exec 'npm-run-all copy:css'",
+    "watch:semantic-js": "nodemon --watch semantic/dist/semantic.min.js --exec 'npm-run-all copy:js'",
+    "watch:semantic-themes": "nodemon --watch semantic/dist/themes/default --exec 'npm-run-all copy:assets'",
+    "copy:js": "cp -f semantic/dist/semantic.min.js source/js/",
+    "copy:css": "cp -f semantic/dist/semantic.min.css source/css/",
+    "copy:assets": "mkdir -p source/css/themes/default/assets/fonts && mkdir -p source/css/themes/default/assets/images && cp -f semantic/dist/themes/default/assets/fonts/* source/css/themes/default/assets/fonts && cp -f semantic/dist/themes/default/assets/images/* source/css/themes/default/assets/images"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/oneverest/patternlab-semantic-mustache.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/oneverest/patternlab-semantic-mustache/issues"
+  },
+  "homepage": "https://github.com/oneverest/patternlab-semantic-mustache#readme",
+  "dependencies": {
+    "jquery": "^3.4.0",
+    "semantic-ui": "^2.4.2"
+  },
+  "devDependencies": {
+    "nodemon": "^1.18.11",
+    "npm-run-all": "^4.1.5",
+    "rimraf": "^2.6.3"
+  }
+}
