@@ -1,0 +1,11 @@
+{
+    "message": {
+        "state": "warning",
+        "title": "New Site Features",
+        "content": "We just updated our privacy policy here to better service our customers. We recommend reviewing the changes.",
+        "items": [
+            {"content": "You can now have cover images on blog pages"},
+            {"content": "Drafts will now auto-save while writing"}
+        ]
+    }
+}

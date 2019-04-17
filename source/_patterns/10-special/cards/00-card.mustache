@@ -1,0 +1,219 @@
+<h1 class="ui dividing header">Types</h1>
+
+<h2 class="ui dividing header">
+    Card
+    <div class="sub header">A single card.</div>
+</h2>
+
+<div class="ui compact warning message">To ensure cards are equal height use the plural, cards. Card groups automatically uses flex styles to match height between cards in the same row.</div>
+
+<div class="ui card">
+    <div class="image">
+        <img src="/images/avatar/kristy.png">
+    </div>
+    <div class="content">
+        <a class="header">Kristy</a>
+        <div class="meta">
+            <span>Joined in 2013</span>
+        </div>
+        <div class="description">
+            <p>Kristy is an art director living in New York.</p>
+        </div>
+    </div>
+    <div class="extra content">
+        <i class="user icon"></i>
+        22 Friends
+    </div>
+</div>
+
+
+<div class="ui card">
+    <div class="content">
+        <div class="left floated header">
+            <img class="ui avatar image" src="/images/avatar/kristy.png">
+            Kristy
+        </div>
+        <div class="right floated meta">
+            <span>14h</span>
+        </div>
+    </div>
+    <div class="image">
+        <img class="ui image" src="/images/wireframe/image.png">
+    </div>
+    <div class="content">
+        <i class="comment icon"></i>
+        3 comments
+        <span class="right floated">
+            <i class="outline like icon"></i>
+            17 likes
+        </span>
+    </div>
+    <div class="extra content">
+        <div class="ui large transparent left icon input">
+            <input type="text" name="" placeholder="Add Comments...">
+            <i class="heart outline icon"></i>
+        </div>
+    </div>
+</div>
+
+<h2 class="ui dividing header">
+    Cards
+    <div class="sub header">A group of cards.</div>
+</h2>
+
+<div class="ui info compact message">Cards are designed to be flexible to your content. content blocks can include any custom elements related to your content.</div>
+
+<div class="ui link cards">
+    <div class="card">
+        <div class="content">
+            <img class="ui right floated mini image" src="/images/avatar/elliot.jpg">
+            <a class="header">Elliot Fu</a>
+            <div class="meta">
+                <span>Friends of Veronika</span>
+            </div>
+            <div class="description">
+                <p>Elliot requested permission to view your contact details</p>
+            </div>
+        </div>
+        <div class="extra content">
+            <div class="ui two buttons">
+                <div class="ui basic green button">Approve</div>
+                <div class="ui basic red button">Decline</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="content">
+            <img class="ui right floated mini image" src="/images/avatar/jenny.jpg">
+            <a class="header">Jenny Hess</a>
+            <div class="meta">
+                <span>New Member</span>
+            </div>
+            <div class="description">
+                <p>Jenny wants to add you to the group <b>best friends</b></p>
+            </div>
+        </div>
+        <div class="extra content">
+            <div class="ui two buttons">
+                <div class="ui basic green button">Approve</div>
+                <div class="ui basic red button">Decline</div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="ui link cards">
+    <div class="ui card">
+        <div class="image">
+            <img src="/images/avatar/matthew.png">
+        </div>
+        <div class="content">
+            <a class="header">Matt Giampietro</a>
+            <div class="meta">
+                <span>Friends</span>
+            </div>
+            <div class="description"><p>Matthew is an interior designer living in New York.</p></div>
+        </div>
+        <div class="extra content">
+            <i class="user icon"></i>
+            75 Friends
+            <span class="right floated">Joined in 2013</span>
+        </div>
+    </div>
+
+    <div class="ui card">
+        <div class="image">
+            <img src="/images/avatar/molly.png">
+        </div>
+        <div class="content">
+            <a class="header">Molly</a>
+            <div class="meta">
+                <span>Coworker</span>
+            </div>
+            <div class="description"><p>Molly is a personal assistant living in Paris.</p></div>
+        </div>
+        <div class="extra content">
+            <i class="user icon"></i>
+            35 Friends
+            <span class="right floated">Joined in 2011</span>
+        </div>
+    </div>
+
+    <div class="ui card">
+        <div class="image">
+            <img src="/images/avatar/elyse.png">
+        </div>
+        <div class="content">
+            <a class="header">Elyse</a>
+            <div class="meta">
+                <span>Coworker</span>
+            </div>
+            <div class="description"><p>Elyse is a copywriter working in New York.</p></div>
+        </div>
+        <div class="extra content">
+            <i class="user icon"></i>
+            251 Friends
+            <span class="right floated">Joined in 2014</span>
+        </div>
+    </div>
+</div>
+
+<h1 class="ui dividing header">Content</h1>
+<h2 class="ui dividing header">
+    Content Block
+    <div class="sub header">A card can contain blocks of content</div>
+</h2>
+
+<div class="ui card">
+    <div class="content">
+        <a class="header">Project Timeline</a>
+    </div>
+    <div class="content">
+        {{!-- <a class="ui mini header">ACTIVITY</a> --}}
+        <h4 class="ui sub header dash_header">ACTIVITY</h4>
+        <div class="ui small feed">
+            <div class="event">
+                <div class="content">
+                    <div class="summary">
+                        <a>Elliot Fu</a> added <a>Jenny Hess</a> to the project
+                    </div>
+                </div>
+            </div>
+
+            <div class="event">
+                <div class="content">
+                  <div class="summary">
+                     <a>Stevie Feliciano</a> was added as an <a>Administrator</a>
+                  </div>
+                </div>
+            </div>
+
+            <div class="event">
+                <div class="content">
+                  <div class="summary">
+                     <a>Helen Troy</a> added two pictures
+                  </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="extra content">
+        <div class="ui button">Join Project</div>
+    </div>
+</div>
+
+<h2 class="ui dividing header">
+    Image
+    <div class="sub header">A card can contain an image</div>
+</h2>
+
+<div class="ui info compact message">Cards can use <a>reveal</a> or <a>dimmers</a> to easily show additional content, or options on hover</div>
+
+<div class="ui card">
+    <div class="ui slide masked reveal image">
+        <img src="/images/avatar/jenny.jpg" class="visible content">
+        <img src="/images/avatar/elliot.jpg" class="hidden content">
+    </div>
+</div>
+

@@ -1,0 +1,81 @@
+{
+    "reveal": [
+        {
+            "class": "fade",
+            "visible": {
+                "src": "/images/square-image.png",
+                "class": "small"
+            },
+            "hidden": {
+                "src": "/images/avatar/ade.jpg",
+                "class": "small"
+            }
+        },
+        {
+            "class": "move",
+            "visible": {
+                "src": "/images/square-image.png",
+                "class": "small"
+            },
+            "hidden": {
+                "src": "/images/avatar/chris.jpg",
+                "class": "small"
+            }
+        },
+        {
+            "class": "move right",
+            "visible": {
+                "src": "/images/square-image.png",
+                "class": "small"
+            },
+            "hidden": {
+                "src": "/images/avatar/jenny.jpg",
+                "class": "small"
+            }
+        },
+        {
+            "class": "move up",
+            "visible": {
+                "src": "/images/square-image.png",
+                "class": "small"
+            },
+            "hidden": {
+                "src": "/images/avatar/justen.jpg",
+                "class": "small"
+            }
+        },
+        {
+            "class": "move down",
+            "visible": {
+                "src": "/images/square-image.png",
+                "class": "small"
+            },
+            "hidden": {
+                "src": "/images/avatar/nan.jpg",
+                "class": "small"
+            }
+        },
+        {
+            "class": "small circular rotate image",
+            "visible": {
+                "src": "/images/square-image.png",
+                "class": "small"
+            },
+            "hidden": {
+                "src": "/images/avatar/steve.jpg",
+                "class": "small"
+            }
+        },
+        {
+            "class": "small circular rotate left image",
+            "visible": {
+                "src": "/images/square-image.png",
+                "class": "small"
+            },
+            "hidden": {
+                "src": "/images/avatar/veronika.jpg",
+                "class": "small"
+            }
+        }
+    ]
+}

@@ -1,0 +1,16 @@
+{
+    "message": [
+        {
+            "state": "",
+            "icon": "inbox",
+            "title": "Have you heard about our mailing list?",
+            "content": "Get the best news in your e-mail every day."
+        },
+        {
+            "state": "",
+            "icon": "notched circle loading",
+            "title": "Just one second",
+            "content": "We're fetching that content for you."
+        }
+    ]
+}

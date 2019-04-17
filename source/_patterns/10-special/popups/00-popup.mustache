@@ -1,0 +1,218 @@
+<h1 class="ui dividing header">Types</h1>
+
+<h2 class="ui dividing header">
+    Javascript
+</h2>
+
+<div class="ui info message">
+    Popup includes both a javascript version (with a full featureset) and a limited CSS only version, which can be useful in pages that use many popups, or with libraries like React or Meteor to avoid handling DOM lifecycle.
+</div>
+
+<h2 class="ui dividing header">
+    Popup
+    <div class="sub header">An element can specify popup content to appear</div>
+</h2>
+<div class="ui icon button" data-content="Add users to your feed">
+  <i class="add icon"></i>
+</div>
+
+<h2 class="ui dividing header">
+    Titled
+    <div class="sub header">An element can specify popup content with a title</div>
+</h2>
+<img src="/images/avatar/elliot.jpg" data-title="Elliot Fu" data-content="Elliot has been a member since July 2012" class="ui avatar image">
+<img src="/images/avatar/stevie.jpg" data-title="Stevie Feliciano" data-content="Stevie has been a member since August 2013" class="ui avatar image">
+<img src="/images/avatar/matt.jpg" data-title="Matt" data-content="Matt has been a member since July 2014" class="ui avatar image">
+
+<h2 class="ui dividing header">
+    HTML
+    <div class="sub header">An element can specify HTML for a popup</div>
+</h2>
+<div class="ui card" data-html="<div class='header'>User Rating</div><div class='content'><div class='ui star rating'><i class='active icon'></i><i class='active icon'></i><i class='active icon'></i><i class='active icon'></i><i class='active icon'></i></div></div>">
+    <div class="image">
+        <img src="/images/avatar/totoro-horizontal.jpg">
+    </div>
+    <div class="content">
+        <div class="header">My Neighbor Totoro</div>
+        <div class="description">
+            <p>Two sisters move to the country with their father in order to be closer to their hospitalized mother, and discover the surrounding trees are inhabited by magical spirits.</p>
+        </div>
+    </div>
+    <div class="ui bottom attached two icon buttons">
+        <div class="ui button">
+            <i class="plus icon"></i>
+            Queue
+        </div>
+        <div class="ui primary button">
+            <i class="play icon"></i>
+            Watch
+        </div>
+    </div>
+</div>
+
+<h2 class="ui dividing header">
+    Pre-Existing
+    <div class="sub header">An element can display a popup that is already included in the page</div>
+</h2>
+<div class="ui segment">
+    <div class="ui card">
+        <div class="image">
+            <img src="/images/avatar/watchmen-horizontal.jpg">
+        </div>
+        <div class="content">
+            <div class="header">Watchmen</div>
+            <div class="description">
+                <p>In a gritty and alternate 1985 the glory days of costumed vigilantes have been brought to a close by a government crackdown, but after one of the masked veterans is brutally murdered an investigation into the killer is initiated.</p>
+            </div>
+        </div>
+        <div class="ui bottom attached two icon buttons">
+            <div class="ui button">
+                <i class="plus icon"></i>
+                Queue
+            </div>
+            <div class="ui primary button">
+                <i class="play icon"></i>
+                Watch
+            </div>
+        </div>
+    </div>
+
+    <div class="ui popup">
+        <div class="header">User Rating</div>
+        <div class="ui rating" data-rating="3"></div>
+    </div>
+</div>
+
+<h1 class="ui dividing header">No Javascript</h1>
+
+<h2 class="ui dividing header">
+    Tooltip
+    <div class="sub header">An element can specify a simple tooltip that can appear without javascript</div>
+</h2>
+
+<div class="ui warning message">Tooltips use an element's :before and :after pseudo classes. Elements like icon that already use these classes for styling will need to have the tooltips to a wrapping element, like a button, or a span to make sure tooltips work correctly.</div>
+
+<div class="ui icon button" data-tooltip="Add users to your feed">
+  <i class="add icon"></i>
+</div>
+<div class="ui icon button" data-tooltip="Add users to your feed" data-inverted="">
+  <i class="add icon"></i>
+</div>
+
+<div class="ui divider"></div>
+
+<div class="ui button" data-tooltip="Add users to your feed" data-position="top left">
+  Top Left
+</div>
+<div class="ui button" data-tooltip="Add users to your feed" data-position="top center">
+  Top Center
+</div>
+<div class="ui button" data-tooltip="Add users to your feed" data-position="top right">
+  Top Right
+</div>
+<div class="ui divider"></div>
+<div class="ui button" data-tooltip="Add users to your feed" data-position="bottom left">
+  Bottom Left
+</div>
+<div class="ui button" data-tooltip="Add users to your feed" data-position="bottom center">
+  Bottom Center
+</div>
+<div class="ui button" data-tooltip="Add users to your feed" data-position="bottom right">
+  Bottom Right
+</div>
+<div class="ui divider"></div>
+<div class="ui button" data-tooltip="Add users to your feed" data-position="right center">
+  Right Center
+</div>
+<div class="ui button" data-tooltip="Add users to your feed" data-position="left center">
+  Left Center
+</div>
+
+<h1 class="ui dividing header">Variations</h1>
+
+<h2 class="ui dividing header">
+    Basic
+    <div class="sub header">A popup can provide more basic formatting</div>
+</h2>
+<div class="ui icon button" data-content="The default theme's basic popup removes the pointing arrow." data-variation="basic">
+  <i class="add icon"></i>
+</div>
+
+<h2 class="ui dividing header">
+    Width
+    <div class="sub header">A popup can be extra wide to allow for longer content</div>
+</h2>
+<i class="circular heart icon link" data-content="Hello. This is a wide pop-up which allows for lots of content with additional space. You can fit a lot of words here and the paragraphs will be pretty wide." data-variation="wide"></i>
+<i class="circular heart icon link" data-content="Hello. This is a very wide pop-up which allows for lots of content with additional space. You can fit a lot of words here and the paragraphs will be pretty wide." data-variation="very wide"></i>
+
+<h2 class="ui dividing header">
+    Fluid
+    <div class="sub header">A fluid popup will take up the entire width of its offset container</div>
+</h2>
+<div class="ui container">
+    <div class="ui button">Show fluid popup</div>
+    <div class="ui fluid popup top left transition hidden">
+        <div class="ui four column divided center aligned grid">
+            <div class="column">1</div>
+            <div class="column">2</div>
+            <div class="column">3</div>
+            <div class="column">4</div>
+        </div>
+    </div>
+</div>
+
+<h2 class="ui dividing header">
+    Size
+    <div class="sub header">A popup can vary in size</div>
+</h2>
+<i class="circular heart icon link" data-content="Hello. This is a mini popup" data-variation="mini"></i>
+<i class="circular heart icon link" data-content="Hello. This is a tiny popup" data-variation="tiny"></i>
+<i class="circular heart icon link" data-content="Hello. This is a small popup" data-variation="small"></i>
+<i class="circular heart icon link" data-content="Hello. This is a large popup" data-variation="large"></i>
+<i class="circular heart icon link" data-content="Hello. This is a huge popup" data-variation="huge"></i>
+
+<h2 class="ui dividing header">
+    Flowing
+    <div class="sub header">A popup can have no maximum width and continue to flow to fit its content</div>
+</h2>
+
+<div class="ui button">Show flowing popup</div>
+<div class="ui flowing popup top left transition hidden">
+  <div class="ui three column divided center aligned grid">
+    <div class="column">
+      <h4 class="ui header dash_header">Basic Plan</h4>
+      <p><b>2</b> projects, $10 a month</p>
+      <div class="ui button">Choose</div>
+    </div>
+    <div class="column">
+      <h4 class="ui header dash_header">Business Plan</h4>
+      <p><b>5</b> projects, $20 a month</p>
+      <div class="ui button">Choose</div>
+    </div>
+    <div class="column">
+      <h4 class="ui header dash_header">Premium Plan</h4>
+      <p><b>8</b> projects, $25 a month</p>
+      <div class="ui button">Choose</div>
+    </div>
+  </div>
+</div>
+
+<h2 class="ui dividing header">
+    Inverted
+    <div class="sub header">A popup can have its colors inverted</div>
+</h2>
+
+<div class="ui container">
+    <i class="circular heart icon link" data-content="Hello. This is an inverted popup" data-variation="inverted"></i>
+    <div class="ui icon button" data-tooltip="Hello. This is an inverted popup" data-position="top left" data-inverted="">
+      <i class="add icon"></i>
+    </div>
+</div>
+
+
+
+
+
+
+
+

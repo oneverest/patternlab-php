@@ -1,0 +1,509 @@
+<h1 class="ui dividing header">
+    Types
+</h1>
+
+<h2 class="ui dividing header">
+    Menu
+    <div class="sub header">A menu</div>
+</h2>
+
+<div class="ui message">Starting in 2.0 menus now use flexbox. This allows each menu item to automatically stretch to the size of the largest item.</div>
+
+<div class="ui three item menu">
+  <a class="active item">Editorials</a>
+  <a class="item">Reviews</a>
+  <a class="item">Upcoming Events</a>
+</div>
+
+<div class="ui info compact message">Many of the following examples use a coupling with dropdowns to display dropdown menus inside of ui menu. Please consult the dropdown documentation for the correct javascript initialization for this component.</div>
+
+
+<div class="ui text menu">
+    <div class="item">
+        <img src="/images/avatar/new-school.jpg">
+    </div>
+    <a class="browse item">
+        Browse Courses
+        <i class="dropdown icon"></i>
+    </a>
+    <div class="ui right dropdown item">
+        More
+        <i class="dropdown icon"></i>
+        <div class="menu">
+            <div class="item">Applications</div>
+            <div class="item">International Students</div>
+            <div class="item">Scholarships</div>
+        </div>
+    </div>
+</div>
+
+<div class="ui flowing basic admission popup">
+  <div class="ui three column relaxed divided grid">
+    <div class="column">
+      <h4 class="ui header">Business</h4>
+      <div class="ui link list">
+        <a class="item">Design &amp; Urban Ecologies</a>
+        <a class="item">Fashion Design</a>
+        <a class="item">Fine Art</a>
+        <a class="item">Strategic Design</a>
+      </div>
+    </div>
+    <div class="column">
+      <h4 class="ui header">Liberal Arts</h4>
+      <div class="ui link list">
+        <a class="item">Anthropology</a>
+        <a class="item">Economics</a>
+        <a class="item">Media Studies</a>
+        <a class="item">Philosophy</a>
+      </div>
+    </div>
+    <div class="column">
+      <h4 class="ui header">Social Sciences</h4>
+      <div class="ui link list">
+        <a class="item">Food Studies</a>
+        <a class="item">Journalism</a>
+        <a class="item">Non Profit Management</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<h2 class="ui dividing header">
+    Pagination
+    <div class="sub header">A pagination menu is specially formatted to present links to pages of content</div>
+</h2>
+<div class="ui pagination menu">
+  <a class="active item">
+    1
+  </a>
+  <div class="disabled item">
+    ...
+  </div>
+  <a class="item">
+    10
+  </a>
+  <a class="item">
+    11
+  </a>
+  <a class="item">
+    12
+  </a>
+</div>
+
+
+
+
+<h1 class="ui dividing header">Content</h1>
+
+<h2 class="ui dividing header">
+    Header
+    <div class="sub header">A menu item may include a header or may itself be a header</div>
+</h2>
+
+<div class="ui menu">
+    <div class="header item">Our Company</div>
+    <a class="item">About Us</a>
+    <a class="item">Jobs</a>
+    <a class="item">Locations</a>
+</div>
+
+<div class="ui divider"></div>
+
+<div class="ui vertical menu">
+    <div class="header item">Products</div>
+    <a class="item">Enterprise</a>
+    <a class="item">Consumer</a>
+    <div class="header item">CMS Solutions</div>
+    <a class="item">Rails</a>
+    <a class="item">Python</a>
+    <a class="item">PHP</a>
+    <div class="header item">Hosting</div>
+    <a class="item">Shared</a>
+    <a class="item">Dedicated</a>
+    <div class="header item">Support</div>
+    <a class="item">E-mail Support</a>
+    <a class="item">FAQs</a>
+</div>
+
+<h2 class="ui dividing header">
+    Text
+    <div class="sub header">A vertical menu item can include any type of text content.</div>
+</h2>
+<div class="ui vertical menu">
+  <a class="item">
+    <h4 class="ui header dash_header">Promotions</h4>
+    <p>Check out our new promotions</p>
+  </a>
+  <a class="item">
+    <h4 class="ui header dash_header">Coupons</h4>
+    <p>Check out our collection of coupons</p>
+  </a>
+  <a class="item">
+    <h4 class="ui header dash_header">Rebates</h4>
+    <p>Visit our rebate forum for information on claiming rebates</p>
+  </a>
+</div>
+
+
+<h2 class="ui dividing header">
+    Input
+    <div class="sub header">A menu item can contain an input inside of it</div>
+</h2>
+<div class="ui menu">
+    <div class="item">
+        <div class="ui input icon">
+            <i class="search icon"></i>
+            <input type="text" name="" placeholder="Search...">
+        </div>
+    </div>
+    <div class="right item">
+        <div class="ui action input">
+            <input type="text" name="" placeholder="Navigate to...">
+            <div class="ui button">Go</div>
+        </div>
+    </div>
+</div>
+
+<h2 class="ui dividing header">
+    Button
+    <div class="sub header">A menu item can contain a button inside of it</div>
+</h2>
+<div class="ui menu">
+    <div class="item">
+        <div class="ui primary button">Sign up</div>
+    </div>
+    <div class="item">
+        <div class="ui button">Log-in</div>
+    </div>
+</div>
+
+<h2 class="ui dividing header">
+    Link Item
+    <div class="sub header">A menu may contain a link item, or an item formatted as if it is a link.</div>
+</h2>
+<div class="ui vertical menu">
+    <a href="https://www.google.com" class="item">
+        Visit Google
+    </a>
+    <div class="link item">
+        Javascript Link
+    </div>
+</div>
+
+<h2 class="ui dividing header">
+    Dropdown Item
+    <div class="sub header">An item may contain a nested menu in a dropdown.</div>
+</h2>
+<div class="ui message">To have a dropdown open without Javascript, use the simple variation</div>
+<div class="ui vertical menu">
+    <div class="ui dropdown item">
+        Categories
+        <i class="dropdown icon"></i>
+        <div class="menu">
+            <a class="item">Electronics</a>
+            <a class="item">Automotive</a>
+            <a class="item">Home</a>
+        </div>
+    </div>
+</div>
+
+<h2 class="ui dividing header">
+    Popup Menu
+    <div class="sub header">A menu item may show a large menu, or additional content using a popup</div>
+</h2>
+
+<div class="ui menu">
+  <a class="browse item">
+    Browse
+    <i class="dropdown icon"></i>
+  </a>
+</div>
+<div class="ui fluid okpopup popup top left transition hidden">
+  <div class="ui four column relaxed equal height divided grid">
+    <div class="column">
+      <h4 class="ui header dash_header">Fabrics</h4>
+      <div class="ui link list">
+        <a class="item">Cashmere</a>
+        <a class="item">Linen</a>
+        <a class="item">Cotton</a>
+        <a class="item">Viscose</a>
+      </div>
+    </div>
+    <div class="column">
+      <h4 class="ui header dash_header">Size</h4>
+      <div class="ui link list">
+        <a class="item">Small</a>
+        <a class="item">Medium</a>
+        <a class="item">Large</a>
+        <a class="item">Plus Sizes</a>
+      </div>
+    </div>
+    <div class="column">
+      <h4 class="ui header dash_header">Colored</h4>
+      <div class="ui link list">
+        <a class="item">Neutrals</a>
+        <a class="item">Brights</a>
+        <a class="item">Pastels</a>
+      </div>
+    </div>
+    <div class="column">
+      <h4 class="ui header dash_header">Types</h4>
+      <div class="ui link list">
+        <a class="item">Knitwear</a>
+        <a class="item">Outerwear</a>
+        <a class="item">Pants</a>
+        <a class="item">Shoes</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<h2 class="ui dividing header">
+    Search
+    <div class="sub header">A menu can contain a search input</div>
+</h2>
+<div class="ui menu">
+    <div class="item">
+        <div class="ui transparent icon input">
+            <i class="search icon"></i>
+            <input type="text" name="" placeholder="Search animals...">
+        </div>
+    </div>
+</div>
+<div class="ui segment">
+    <div class="ui placeholder">
+        <div class="paragraph">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+    </div>
+</div>
+
+<h2 class="ui dividing header">
+    Menu
+    <div class="sub header">A menu may contain another menu group in the same level as menu items.</div>
+</h2>
+<div class="ui menu">
+    <div class="item">Browse</div>
+    <div class="item">Submit</div>
+    <div class="right menu">
+        <div class="item">Sign Up</div>
+        <div class="item">Help</div>
+    </div>
+</div>
+
+<h2 class="ui dividing header">
+    Sub Menu
+    <div class="sub header">A menu item may contain another menu nested inside that acts as a grouped sub-menu.</div>
+</h2>
+<div class="ui vertical divided menu">
+    <div class="item">
+        <div class="ui input">
+            <input type="text" name="" placeholder="Search...">
+        </div>
+    </div>
+    <div class="item">
+        Home
+        <div class="menu">
+            <div class="item">Search</div>
+            <div class="item">Add</div>
+            <div class="item">Remove</div>
+        </div>
+    </div>
+    <div class="item">
+        Browse
+        <i class="grid layout icon"></i>
+    </div>
+    <div class="item">Messages</div>
+    <div class="ui dropdown item">
+        More
+        <i class="dropdown icon"></i>
+        <div class="menu">
+            <div class="item">
+                <i class="edit icon"></i>
+                Edit Profile
+            </div>
+            <div class="item">
+                <i class="globe icon"></i>
+                Choose Language
+            </div>
+            <div class="item">
+                <i class="setting icon"></i>
+                Account Settings
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<h1 class="ui dividing header">States</h1>
+
+<h2 class="ui dividing header">
+    Hover
+    <div class="sub header">A menu item can be hovered</div>
+</h2>
+
+<div class="ui warning message">Menu items are only hoverable if they are a links, or given the class name link</div>
+
+<div class="ui compact menu">
+  <a class="item active">
+    A link
+  </a>
+  <div class="link item">
+    div Link
+  </div>
+</div>
+
+<h2 class="ui dividing header">
+    Active
+    <div class="sub header">A menu item can be active</div>
+</h2>
+<div class="ui compact menu">
+  <div class="active item">
+    Link
+  </div>
+</div>
+
+<h1 class="ui dividing header">Variations</h1>
+
+<h2 class="ui dividing header">
+    Fixed
+    <div class="sub header">A menu can be fixed to a side of its context</div>
+</h2>
+
+
+<h2 class="ui dividing header">
+    Attached
+    <div class="sub header">A menu may be attached to other content segments</div>
+</h2>
+
+<div class="ui top attached tabular menu">
+    <a class="active item">Tab 1</a>
+    <a class="item">Tab 2</a>
+</div>
+<div class="ui bottom attached segment">
+    <div class="ui placeholder">
+        <div class="paragraph">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+    </div>
+</div>
+
+<div class="ui divider"></div>
+
+<div class="ui top attached menu">
+  <a class="item">
+    Section 1
+  </a>
+  <a class="item active">
+    Section 2
+  </a>
+</div>
+<div class="ui attached segment">
+  There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc.
+</div>
+<div class="ui bottom attached menu">
+  <a class="item">
+    Section 1
+  </a>
+  <a class="item active">
+    Section 2
+  </a>
+</div>
+
+<h2 class="ui dividing header">
+    Size
+    <div class="sub header">A menu can vary in size</div>
+</h2>
+
+<div class="ui mini menu">
+  <a class="active item">
+    Home
+  </a>
+  <a class="item">
+    Messages
+  </a>
+  <div class="right menu">
+    <div class="ui dropdown item">
+      Language <i class="dropdown icon"></i>
+      <div class="menu">
+        <a class="item">English</a>
+        <a class="item">Russian</a>
+        <a class="item">Spanish</a>
+      </div>
+    </div>
+    <div class="item">
+        <div class="ui primary button">Sign Up</div>
+    </div>
+  </div>
+</div>
+
+<div class="ui divider">
+</div>
+<div class="ui segment">
+    <div class="ui mini vertical menu">
+    <a class="active item">
+    <div class="ui teal label">1</div>
+    Inbox
+    </a>
+    <a class="item">
+    <div class="ui label">51</div>
+    Spam
+    </a>
+    <a class="item">
+    <div class="ui label">1</div>
+    Updates
+    </a>
+    <div class="item">
+    <div class="ui icon input">
+    <input type="text" placeholder="Search mail...">
+    <i class="search icon"></i>
+    </div>
+    </div>
+    </div>
+</div>
+
+
+<h2 class="ui dividing header">
+    Fitted
+    <div class="sub header">A menu item or menu can remove element padding, vertically or horizontally</div>
+</h2>
+
+<div class="ui menu">
+  <div class="fitted item">
+    No padding whatsoever
+  </div>
+  <div class="horizontally fitted item">
+    No horizontal padding
+  </div>
+  <div class="vertically fitted item">
+    No vertical padding
+  </div>
+</div>
+
+<h2 class="ui dividing header">
+    Borderless
+    <div class="sub header">A menu item or menu can have no borders</div>
+</h2>
+<div class="ui borderless menu">
+  <a class="item">1</a>
+  <a class="item">2</a>
+  <a class="item">3</a>
+  <a class="item">4</a>
+  <a class="item">5</a>
+  <a class="item">6</a>
+</div>
+
+
+
+
+
+
+

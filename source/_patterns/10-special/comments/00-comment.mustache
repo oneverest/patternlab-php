@@ -1,0 +1,514 @@
+<h1 class="ui dividing header">Types</h1>
+
+<h2 class="ui dividing header">
+    Comments
+    <div class="sub header">A basic list of comments</div>
+</h2>
+
+<div class="ui messages">
+    <div class="ui attached info message">
+        These examples uses ui segment to create content segments. This is not required.
+    </div>
+    <div class="ui attached warning message">
+        UI Views provide structured layouts, but do not hook up site specific code. You will need to add your own Javascript behaviors to hide and show the appropriate forms. For example, having a reply button open a reply form
+    </div>
+</div>
+
+<div class="ui comments">
+    <h3 class="ui dividing header">Comments</h3>
+    <div class="comment">
+        <a class="avatar">
+            <img src="/images/avatar/molly.png">
+        </a>
+        <div class="content">
+            <a class="author">Matt</a>
+            <div class="metadata">
+                <span class="date">Today at 5:42PM</span>
+            </div>
+            <div class="text">How artistic!</div>
+            <div class="actions">
+                <a class="reply">reply</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="comment">
+        <a class="avatar">
+            <img src="/images/avatar/elliot.jpg">
+        </a>
+        <div class="content">
+            <a class="author">Elliot Fu</a>
+            <div class="metadata">
+                <span class="date">Yesterday at 12:30A</span>
+            </div>
+            <div class="text">This has been very useful for my research. Thanks as well!</div>
+            <div class="actions">
+                <a class="reply">reply</a>
+            </div>
+        </div>
+        <div class="comments">
+            <div class="comment">
+                <a class="avatar">
+                    <img src="/images/avatar/jenny.jpg">
+                </a>
+                <div class="content">
+                    <a class="author">Jenny Hess</a>
+                    <div class="metadata">
+                        <span class="date">Just now</span>
+                    </div>
+                    <div class="text">Elliot you are always so right :</div>
+                    <div class="actions">
+                        <a class="reply">reply</a>
+                    </div>
+                </div>
+            </div>  
+        </div>
+    </div>
+
+    <div class="comment">
+        <a class="avatar">
+            <img src="/images/avatar/joe.jpg">
+        </a>
+        <div class="content">
+            <a class="author">Joe Henderson</a>
+            <div class="metadata">
+                <span class="date">5 days ago</span>
+            </div>
+            <div class="text">Dude, this is awesome. Thanks so much</div>
+            <div class="actions">
+                <a class="reply">reply</a>
+            </div>
+        </div>
+    </div>
+
+    <form class="ui reply form">
+        <div class="field">
+            <textarea></textarea>
+        </div>
+        <div class="ui blue labeled submit icon button">
+            <i class="edit icon"></i>
+            Add Reply
+        </div>
+    </form>
+</div>
+
+<h1 class="ui dividing header">Content</h1>
+<h2 class="ui dividing header">
+    Avatar
+    <div class="sub header">A comment can contain an image or avatar</div>
+</h2>
+
+<div class="ui comments">
+  <div class="comment">
+    <a class="avatar">
+      <img src="/images/avatar/elliot.jpg">
+    </a>
+    <div class="content">
+      <a class="author">Elliot Fu</a>
+    </div>
+  </div>
+</div>
+
+<h2 class="ui dividing header">
+    Metadata
+    <div class="sub header">A comment can contain metadata about the comment, an arbitrary amount of metadata may be defined.</div>
+</h2>
+
+<div class="ui comments">
+  <div class="comment">
+    <a class="avatar">
+      <img src="/images/avatar/stevie.jpg">
+    </a>
+    <div class="content">
+      <a class="author">Stevie Feliciano</a>
+      <div class="metadata">
+        <div class="date">2 days ago</div>
+        <div class="rating">
+          <i class="star icon"></i>
+          5 Faves
+        </div>
+      </div>
+      <div class="text">
+        Hey guys, I hope this example comment is helping you read this documentation.
+      </div>
+    </div>
+  </div>
+</div>
+
+<h2 class="ui dividing header">
+    Actions
+    <div class="sub header">A comment can contain an list of actions a user may perform related to this comment.</div>
+</h2>
+
+<div class="ui comments">
+  <div class="comment">
+    <a class="avatar">
+      <img src="/images/avatar/joe.jpg">
+    </a>
+    <div class="content">
+      <a class="author">Tom Lukic</a>
+      <div class="text">
+        This will be great for business reports. I will definitely download this.
+      </div>
+      <div class="actions">
+        <a class="reply">Reply</a>
+        <a class="save">Save</a>
+        <a class="hide">Hide</a>
+        <a>
+          <i class="expand icon"></i>
+          Full-screen
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<h2 class="ui dividing header">
+    Reply Form
+    <div class="sub header">A comment can contain a form to reply to a comment. This may have arbitrary content.</div>
+</h2>
+
+<div class="ui info compact message">If a comment form is located inside a ui comment it will be formatted as an nested reply form. If the comment form is included after all comments, it will be formatted as a normal reply form.</div>
+
+<div class="ui comments">
+  <div class="comment">
+    <a class="avatar">
+      <img src="/images/avatar/steve.jpg">
+    </a>
+    <div class="content">
+      <a class="author">Steve Jobes</a>
+      <div class="metadata">
+        <div class="date">2 days ago</div>
+      </div>
+      <div class="text">
+        Revolutionary!
+      </div>
+      <div class="actions">
+        <a class="reply active">Reply</a>
+      </div>
+      <form class="ui reply form">
+        <div class="field">
+          <textarea></textarea>
+        </div>
+        <div class="ui primary submit labeled icon button">
+          <i class="icon edit"></i> Add Reply
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+
+<h1 class="ui dividing header">States</h1>
+<h2 class="ui dividing header">
+    Collapsed
+    <div class="sub header">Comments can be collapsed, or hidden from view</div>
+</h2>
+
+
+<div class="ui comments">
+  <div class="comment">
+    <a class="avatar">
+      <img src="/images/avatar/christian.jpg">
+    </a>
+    <div class="content">
+      <a class="author">Christian Rocha</a>
+      <div class="metadata">
+        <span class="date">2 days ago</span>
+      </div>
+      <div class="text">
+        I'm very interested in this motherboard. Do you know if it'd work in a Intel LGA775 CPU socket?
+      </div>
+      <div class="actions">
+        <a class="reply">Reply</a>
+      </div>
+    </div>
+    <div class="collapsed comments">
+      <div class="comment">
+        <a class="avatar">
+          <img src="/images/avatar/elliot.jpg">
+        </a>
+        <div class="content">
+          <a class="author">Elliot Fu</a>
+          <div class="metadata">
+            <span class="date">1 day ago</span>
+          </div>
+          <div class="text">
+            No, it wont
+          </div>
+          <div class="actions">
+            <a class="reply">Reply</a>
+          </div>
+        </div>
+        <div class="comments">
+          <div class="comment">
+            <a class="avatar">
+              <img src="/images/avatar/jenny.jpg">
+            </a>
+            <div class="content">
+              <a class="author">Jenny Hess</a>
+              <div class="metadata">
+                <span class="date">20 minutes ago</span>
+              </div>
+              <div class="text">
+                Maybe it would.
+              </div>
+              <div class="actions">
+                <a class="reply">Reply</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<h1 class="ui dividing header">Variations</h1>
+<h2 class="ui dividing header">
+    Threaded
+    <div class="sub header">A comment list can be threaded to showing the relationship between conversations</div>
+</h2>
+
+<div class="ui threaded comments">
+    <h3 class="ui dividing header">Comments</h3>
+    <div class="comment">
+        <a class="avatar">
+            <img src="/images/avatar/molly.png">
+        </a>
+        <div class="content">
+            <a class="author">Matt</a>
+            <div class="metadata">
+                <span class="date">Today at 5:42PM</span>
+            </div>
+            <div class="text">How artistic!</div>
+            <div class="actions">
+                <a class="reply">reply</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="comment">
+        <a class="avatar">
+            <img src="/images/avatar/elliot.jpg">
+        </a>
+        <div class="content">
+            <a class="author">Elliot Fu</a>
+            <div class="metadata">
+                <span class="date">Yesterday at 12:30A</span>
+            </div>
+            <div class="text">This has been very useful for my research. Thanks as well!</div>
+            <div class="actions">
+                <a class="reply">reply</a>
+            </div>
+        </div>
+        <div class="comments">
+            <div class="comment">
+                <a class="avatar">
+                    <img src="/images/avatar/jenny.jpg">
+                </a>
+                <div class="content">
+                    <a class="author">Jenny Hess</a>
+                    <div class="metadata">
+                        <span class="date">Just now</span>
+                    </div>
+                    <div class="text">Elliot you are always so right :</div>
+                    <div class="actions">
+                        <a class="reply">reply</a>
+                    </div>
+                </div>
+            </div>  
+        </div>
+    </div>
+
+    <div class="comment">
+        <a class="avatar">
+            <img src="/images/avatar/joe.jpg">
+        </a>
+        <div class="content">
+            <a class="author">Joe Henderson</a>
+            <div class="metadata">
+                <span class="date">5 days ago</span>
+            </div>
+            <div class="text">Dude, this is awesome. Thanks so much</div>
+            <div class="actions">
+                <a class="reply">reply</a>
+            </div>
+        </div>
+    </div>
+
+    <form class="ui reply form">
+        <div class="field">
+            <textarea></textarea>
+        </div>
+        <div class="ui blue labeled submit icon button">
+            <i class="edit icon"></i>
+            Add Reply
+        </div>
+    </form>
+</div>
+
+<h2 class="ui dividing header">
+    Minimal
+    <div class="sub header">Comments can hide extra information unless a user shows intent to interact with a comment.</div>
+</h2>
+
+<div class="ui minimal comments">
+    <h3 class="ui dividing header">Comments</h3>
+    <div class="comment">
+        <a class="avatar">
+            <img src="/images/avatar/molly.png">
+        </a>
+        <div class="content">
+            <a class="author">Matt</a>
+            <div class="metadata">
+                <span class="date">Today at 5:42PM</span>
+            </div>
+            <div class="text">How artistic!</div>
+            <div class="actions">
+                <a class="reply">reply</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="comment">
+        <a class="avatar">
+            <img src="/images/avatar/elliot.jpg">
+        </a>
+        <div class="content">
+            <a class="author">Elliot Fu</a>
+            <div class="metadata">
+                <span class="date">Yesterday at 12:30A</span>
+            </div>
+            <div class="text">This has been very useful for my research. Thanks as well!</div>
+            <div class="actions">
+                <a class="reply">reply</a>
+            </div>
+        </div>
+        <div class="comments">
+            <div class="comment">
+                <a class="avatar">
+                    <img src="/images/avatar/jenny.jpg">
+                </a>
+                <div class="content">
+                    <a class="author">Jenny Hess</a>
+                    <div class="metadata">
+                        <span class="date">Just now</span>
+                    </div>
+                    <div class="text">Elliot you are always so right :</div>
+                    <div class="actions">
+                        <a class="reply">reply</a>
+                    </div>
+                </div>
+            </div>  
+        </div>
+    </div>
+
+    <div class="comment">
+        <a class="avatar">
+            <img src="/images/avatar/joe.jpg">
+        </a>
+        <div class="content">
+            <a class="author">Joe Henderson</a>
+            <div class="metadata">
+                <span class="date">5 days ago</span>
+            </div>
+            <div class="text">Dude, this is awesome. Thanks so much</div>
+            <div class="actions">
+                <a class="reply">reply</a>
+            </div>
+        </div>
+    </div>
+
+    <form class="ui reply form">
+        <div class="field">
+            <textarea></textarea>
+        </div>
+        <div class="ui blue labeled submit icon button">
+            <i class="edit icon"></i>
+            Add Reply
+        </div>
+    </form>
+</div>
+
+<h2 class="ui dividing header">
+    Size
+    <div class="sub header">Comments can have different sizes</div>
+</h2>
+
+<div class="ui large comments">
+    <h3 class="ui dividing header">Comments</h3>
+    <div class="comment">
+        <a class="avatar">
+            <img src="/images/avatar/molly.png">
+        </a>
+        <div class="content">
+            <a class="author">Matt</a>
+            <div class="metadata">
+                <span class="date">Today at 5:42PM</span>
+            </div>
+            <div class="text">How artistic!</div>
+            <div class="actions">
+                <a class="reply">reply</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="comment">
+        <a class="avatar">
+            <img src="/images/avatar/elliot.jpg">
+        </a>
+        <div class="content">
+            <a class="author">Elliot Fu</a>
+            <div class="metadata">
+                <span class="date">Yesterday at 12:30A</span>
+            </div>
+            <div class="text">This has been very useful for my research. Thanks as well!</div>
+            <div class="actions">
+                <a class="reply">reply</a>
+            </div>
+        </div>
+        <div class="comments">
+            <div class="comment">
+                <a class="avatar">
+                    <img src="/images/avatar/jenny.jpg">
+                </a>
+                <div class="content">
+                    <a class="author">Jenny Hess</a>
+                    <div class="metadata">
+                        <span class="date">Just now</span>
+                    </div>
+                    <div class="text">Elliot you are always so right :</div>
+                    <div class="actions">
+                        <a class="reply">reply</a>
+                    </div>
+                </div>
+            </div>  
+        </div>
+    </div>
+
+    <div class="comment">
+        <a class="avatar">
+            <img src="/images/avatar/joe.jpg">
+        </a>
+        <div class="content">
+            <a class="author">Joe Henderson</a>
+            <div class="metadata">
+                <span class="date">5 days ago</span>
+            </div>
+            <div class="text">Dude, this is awesome. Thanks so much</div>
+            <div class="actions">
+                <a class="reply">reply</a>
+            </div>
+        </div>
+    </div>
+
+    <form class="ui reply form">
+        <div class="field">
+            <textarea></textarea>
+        </div>
+        <div class="ui blue labeled submit icon button">
+            <i class="edit icon"></i>
+            Add Reply
+        </div>
+    </form>
+</div>

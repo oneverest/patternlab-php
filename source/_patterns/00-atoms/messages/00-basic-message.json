@@ -1,0 +1,25 @@
+{
+    "message": [
+      {
+        "state": "positive",
+        "header": {"title": "Changes in Service"},
+        "content": "We just updated our privacy policy here to better service our customers. We recommend reviewing the changes."
+      },
+      {
+        "state": "compact",
+        "content": "Get all the best inventions in your e-mail every day. Sign up now!"
+      },
+      {
+        "state": "visible",
+        "content": "You can always see me"
+      },
+      {
+        "state": "red",
+        "content": "red"
+      },
+      {
+        "state": "massive",
+        "content": "This is massive message."
+      }
+    ]
+}
