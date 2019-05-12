@@ -1,0 +1,1021 @@
+<h1 class="ui dividing header">Types</h1>
+
+
+<h2>Form</h2>
+<p>A form</p>
+
+<div class="ui warning message">
+    If you are looking for validation you should check out <b>form behaviors</b>.
+</div>
+
+<div class="ui form">
+    <div class="field">
+        <label>First Name</label>
+        <input type="text" name="FirstName" placeholder="First Name">
+    </div>
+    <div class="field">
+        <label>Last Name</label>
+        <input type="text" name="LastName" placeholder="Last Name">
+    </div>
+    <div class="field">
+        <div class="ui checkbox">
+            <label>I agree to the Terms and Conditions</label>
+            <input type="checkbox" name="" tabindex="0" class="hidden">
+        </div>
+    </div>
+    <button class="ui button" type="submit">Submit</button>
+</div>
+
+<div class="ui horizontal divider">华丽的分界线</div>
+
+<div class="ui form">
+    <h4 class="ui dividing header">Shipping Information</h4>
+    <div class="field">
+        <label>Name</label>
+        <div class="two fields">
+            <div class="field">
+                <input type="Text" name="shipping[first-name]" placeholder="Last Name">
+            </div>
+            <div class="field">
+                <input type="Text" name="shipping[last-name]" placeholder="First Name">
+            </div>
+        </div>
+    </div>
+    <div class="field">
+        <label>Billing Address</label>
+        <div class="two fields">
+            <div class="twelve wide field"><input type="text" name="shipping[address]" placeholder="Street Address"></div>
+            <div class="four wide field"><input type="text" name="shipping[address-2]" placeholder="Apt #"></div>
+        </div>
+    </div>
+    <div class="two fields">
+        <div class="field">
+            <label>State</label>
+            <select class="ui fluid dropdown">
+                <option value="">State</option>
+                <option value="AL">Alabama</option>
+                <option value="AK">Alaska</option>
+                <option value="AZ">Arizona</option>
+            </select>
+        </div>
+        <div class="field">
+            <label>Country</label>
+            <div class="ui fluid search selection dropdown">
+                <input type="hidden" name="country">
+                <i class="dropdown icon"></i>
+                <div class="default text">Select Country</div>
+                <div class="menu">
+                    <div class="item" data-value="af"><i class="af flag"></i>Afghanistan</div>
+                    <div class="item" data-value="ax"><i class="ax flag"></i>Aland Islands</div>
+                    <div class="item" data-value="al"><i class="al flag"></i>Albania</div>
+                    <div class="item" data-value="dz"><i class="dz flag"></i>Algeria</div>
+                    <div class="item" data-value="as"><i class="as flag"></i>American Samoa</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <h4 class="ui dividing header">Billing Information</h4>
+    <div class="field">
+        <label>Card Type</label>
+        <div class="ui selection dropdown">
+            <input type="hidden" name="card[type]">
+            <i class="dropdown icon"></i>
+            <div class="default text">Type</div>
+            <div class="menu">
+                <div class="item" data-value="visa">
+                    <i class="visa icon"></i> Visa
+                </div>
+                <div class="item" data-value="visa">
+                    <i class="visa icon"></i> American Express
+                </div>
+                <div class="item" data-value="visa">
+                    <i class="visa icon"></i> Discover
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="three fields">
+        <div class="seven wide field">
+            <label>Card Number</label>
+            <input type="text" name="card[number]" maxlength="16" placeholder="Card #">
+        </div>
+        <div class="three wide field">
+            <label>CVC</label>
+            <input type="text" name="card[cvc]" maxlength="3" placeholder="CVC">
+        </div>
+        <div class="six wide field">
+            <label>Expiration</label>
+            <div class="two fields">
+                <div class="field">
+                    <select class="ui dropdown" name="card[expire-month]">
+                        <option value="">Month</option>
+                        <option value="1">January</option>
+                        <option value="2">February</option>
+                        <option value="3">March</option>
+                        <option value="4">April</option>
+                        <option value="5">May</option>
+                        <option value="6">June</option>
+                        <option value="7">July</option>
+                        <option value="8">August</option>
+                        <option value="9">September</option>
+                        <option value="10">October</option>
+                        <option value="11">November</option>
+                        <option value="12">December</option>
+                    </select>
+                </div>
+                <div class="field">
+                    <input type="text" name="card[expire-year]" placeholder="Year">
+                </div>
+            </div>
+        </div>
+    </div>
+    <h4 class="ui dividing header">Receipt</h4>
+    <div class="field">
+        <label>Send Receipt To:</label>
+        <div class="ui multiple fluid search selection dropdown">
+            <input type="hidden" name="receipt">
+            <i class="dropdown icon"></i>
+            <div class="default text">Saved Contacts</div>
+            <div class="menu">
+                <div class="item" data-value="jenny" data-text="Jenny"><img src="/images/avatar/jenny.jpg">Jenny Hess</div>
+                <div class="item" data-value="elliot" data-text="Elliot"><img src="/images/avatar/elliot.jpg">Elliot Hu</div>
+                <div class="item" data-value="stevie" data-text="Stevie"><img src="/images/avatar/stevie.jpg">Stevie Feliciano</div>
+                <div class="item" data-value="christian" data-text="Christian"><img src="/images/avatar/christian.jpg">Christian</div>
+                <div class="item" data-value="matt" data-text="Matt"><img src="/images/avatar/matt.jpg">Matt</div>
+                <div class="item" data-value="justen" data-text="Justen"><img src="/images/avatar/justen.jpg">Justen Kitsune</div>
+            </div>
+        </div>
+    </div>
+    <div class="ui segment">
+        <div class="field">
+            <div class="ui toggle checkbox">
+                <label>Do not include a receipt in the package</label>
+                <input type="checkbox" name="gift" tabindex="0" class="hidden">
+            </div>
+        </div>
+    </div>
+    <button class="ui button" tabindex="-1">Submit Order</button>
+</div>
+
+<h1 class="ui dividing header">Content</h1>
+<h2 class="ui header">
+    Field
+    <div class="sub header">A field is a form element containing a label and an input</div>
+</h2>
+
+<div class="ui form">
+    <div class="field">
+        <label>User Input</label>
+        <input type="text" name="">
+    </div>
+</div>
+
+<h2 class="ui header">
+    Fields
+    <div class="sub header">A set of fields can appear grouped together</div>
+</h2>
+
+<div class="ui success message">Field groups automatically receive responsive styling, swapping to one field per row on mobile devices.</div>
+
+<div class="ui form">
+    <div class="fields">
+        <div class="field">
+            <label>First Name</label>
+            <input type="text" name="" placeholder="First Name">
+        </div>
+        <div class="field">
+            <label>Middle Name</label>
+            <input type="text" name="" placeholder="Middle Name">
+        </div>
+        <div class="field">
+            <label>Last Name</label>
+            <input type="text" name="" placeholder="Last Name">
+        </div>
+    </div>
+</div>
+
+<div class="ui form">
+    <div class="three fields">
+        <div class="field">
+            <label>First Name</label>
+            <input type="text" name="" placeholder="First Name">
+        </div>
+        <div class="field">
+            <label>Middle Name</label>
+            <input type="text" name="" placeholder="Middle Name">
+        </div>
+        <div class="field">
+            <label>Last Name</label>
+            <input type="text" name="" placeholder="Last Name">
+        </div>
+    </div>
+</div>
+
+<div class="ui form">
+    <div class="inline fields">
+        <div class="eight wide field">
+            <label>Name</label>
+            <input type="text" name="" placeholder="First Name">
+        </div>
+        <div class="three wide field">
+            <input type="text" name="" placeholder="Middle Name">
+        </div>
+        <div class="five wide field">
+            <input type="text" name="" placeholder="Last Name">
+        </div>
+    </div>
+</div>
+
+<h2 class="ui header">
+    Text Aera
+    <div class="sub header">A textarea can be used to allow for extended user input.</div>
+</h2>
+<div class="ui info message">To specify an approximate text area size use the <b>rows</b> attribute.</div>
+
+<div class="ui form">
+    <div class="field">
+        <label>Text</label>
+        <textarea></textarea>
+    </div>
+    <div class="field">
+        <label>Short Text</label>
+        <textarea rows="2"></textarea>
+    </div>
+</div>
+
+<h2 class="ui header">
+    Checkbox
+    <div class="sub header">
+        A form can contain a <b>checkbox</b>
+    </div>
+</h2>
+<div class="ui info message">UI checkbox are special, styled versions of standard HTML checkboxes.</div>
+
+<div class="ui pointing below label">Javascript</div>
+<div class="ui attached segment">
+    <code>$('.ui.checkbox').checkbox();</code>
+</div>
+
+<div class="ui form">
+    <div class="inline field">
+        <div class="ui checkbox">
+            <label>Checkbox</label>
+            <input type="checkbox" name="">
+        </div>
+    </div>
+    <div class="inline field">
+        <div class="ui slider checkbox">
+            <label>Checkbox</label>
+            <input type="checkbox" name="">
+        </div>
+    </div>
+    <div class="inline field">
+        <div class="ui toggle checkbox">
+            <label>Checkbox</label>
+            <input type="checkbox" name="">
+        </div>
+    </div>
+</div>
+
+<h2 class="ui header">
+    Radio Checkbox
+    <div class="sub header">A form can include a radio checkbox</div>
+</h2>
+
+<div class="ui form">
+    <div class="inline fields">
+        <label>Select your favorite fruit:</label>
+        <div class="field">
+            <div class="ui radio checkbox">
+                <label>Apples</label>
+                <input type="checkbox" name="">
+            </div>
+        </div>
+        <div class="field">
+            <div class="ui radio checkbox">
+                <label>Oranges</label>
+                <input type="checkbox" name="">
+            </div>
+        </div>
+        <div class="field">
+            <div class="ui radio checkbox">
+                <label>Pears</label>
+                <input type="checkbox" name="">
+            </div>
+        </div>
+        <div class="field">
+            <div class="ui radio checkbox">
+                <label>Grapefruit</label>
+                <input type="checkbox" name="">
+            </div>
+        </div>
+    </div>
+
+    <div class="grouped fields">
+        <label>Select your second favorite fruit:</label>
+        <div class="field">
+            <div class="ui radio checkbox">
+                <label>Apples</label>
+                <input type="checkbox" name="">
+            </div>
+        </div>
+        <div class="field">
+            <div class="ui radio checkbox">
+                <label>Oranges</label>
+                <input type="checkbox" name="">
+            </div>
+        </div>
+        <div class="field">
+            <div class="ui radio checkbox">
+                <label>Pears</label>
+                <input type="checkbox" name="">
+            </div>
+        </div>
+        <div class="field">
+            <div class="ui radio checkbox">
+                <label>Grapefruit</label>
+                <input type="checkbox" name="">
+            </div>
+        </div>
+    </div>
+</div>
+
+<h2 class="ui header">
+    Dropdown
+    <div class="sub header">A form can contain a <b>dropdown</b></div>
+</h2>
+<div class="ui info message">Dropdown will automatically convert <b>select</b> elements initialized as dropdowns. For more details check out the dropdown docs</div>
+
+<div class="ui pointing below label">Javascript</div>
+<div class="ui attached segment">
+    <code>$('select.dropdown').dropdown();</code>
+</div>
+
+<div class="ui form">
+    <div class="field">
+        <label>Gender</label>
+        <div class="ui selection dropdown">
+            <input type="hidden" name="">
+            <i class="dropdown icon"></i>
+            <div class="default text">Gender</div>
+            <div class="menu">
+                <div class="item" data-value="male">Male</div>
+                <div class="item" data-value="female">Female</div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="ui form">
+  <div class="field">
+    <label>Country</label>
+    <select class="ui search dropdown">
+      <option value="">Select Country</option>
+      <option value="AR">Argentina</option>
+      <option value="AM">Armenia</option>
+      <option value="AW">Aruba</option>
+      <option value="AU">Australia</option>
+      <option value="AT">Austria</option>
+      <option value="AZ">Azerbaijan</option>
+      <option value="BS">Bahamas</option>
+      <option value="BH">Bahrain</option>
+      <option value="TK">Tokelau</option>
+      <option value="TO">Tonga</option>
+      <option value="TT">Trinidad and Tobago</option>
+      <option value="TN">Tunisia</option>
+      <option value="TR">Turkey</option>
+      <option value="VI">Virgin Islands, U.S.</option>
+      <option value="WF">Wallis and Futuna</option>
+      <option value="EH">Western Sahara</option>
+      <option value="YE">Yemen</option>
+      <option value="ZM">Zambia</option>
+      <option value="ZW">Zimbabwe</option>
+    </select>
+  </div>
+</div>
+
+<h2 class="ui header">
+    Multiple Select
+    <div class="sub header">
+        A <b>multiple select</b> is used to include several choices with one form field
+    </div>
+</h2>
+
+<div class="ui form">
+    <div class="field">
+        <label>Country</label>
+        <div class="ui multiple selection dropdown">
+            <input type="hidden" name="">
+            <i class="dropdown icon"></i>
+            <div class="default text">Select Country</div>
+            <div class="menu">
+                <div class="item" data-value="WF">Wallis and Futuna</div>
+                <div class="item" data-value="EH">Western Sahara</div>
+                <div class="item" data-value="YE">Yemen</div>
+                <div class="item" data-value="ZM">Zambia</div>
+                <div class="item" data-value="ZW">Zimbabwe</div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<h2 class="ui header">
+    HTML Select
+    <div class="sub header">
+        If Javascript or <a href="">ui dropdown</a> are not a viable option, forms also can provide basic styling for select elements
+    </div>
+</h2>
+
+<div class="ui form">
+  <div class="field">
+    <select>
+      <option value="">Gender</option>
+      <option value="1">Male</option>
+      <option value="0">Female</option>
+    </select>
+  </div>
+</div>
+
+<h2 class="ui header">
+    Message
+    <div class="sub header">A form can contain a <a href="">message</a></div>
+</h2>
+<div class="ui info message">Any <b>info</b>, <b>error</b>, <b>success</b>, or <b>warning</b> message blocks found inside a form are hidden by default.</div>
+
+<div class="ui form">
+    <div class="ui message">
+        <h2 class="header">We had some issues</h2>
+        <ul class="list">
+          <li>Please enter your first name</li>
+          <li>Please enter your last name</li>
+        </ul>
+    </div>
+</div>
+
+<h1 class="ui dividing header">States</h1>
+
+<h2 class="ui header">
+    Loading
+    <div class="sub header">
+        If a form is in loading state, it will automatically show a loading indicator.
+    </div>
+</h2>
+
+<div class="ui loading form">
+    <div class="field">
+        <label>E-mail</label>
+        <input type="text" name="" placeholder="joe@schmoe.com">
+    </div>
+    <button class="ui button" type="submit">Submit</button>
+</div>
+
+<h2 class="ui header">
+    Success
+    <div class="sub header">
+        If a form is in an success state, it will automatically show any success message blocks.
+    </div>
+</h2>
+
+<div class="ui success form">
+    <div class="field">
+        <label>E-mail</label>
+        <input type="text" name="" placeholder="joe@schmoe.com">
+    </div>
+    <div class="ui success message">
+        <div class="header">Form Completed</div>
+        You're all signed up for the newsletter.
+    </div>
+    <button class="ui button" type="submit">Submit</button>
+</div>
+
+<h2 class="ui header">
+    Error
+    <div class="sub header">
+        If a form is in an error state, it will automatically show any error message blocks.
+    </div>
+</h2>
+
+<div class="ui error form">
+    <div class="field">
+        <label>E-mail</label>
+        <input type="text" name="" placeholder="joe@schmoe.com">
+    </div>
+    <div class="ui error message">
+        <div class="header">Action Forbidden</div>
+        You can only sign up for an account once with a given e-mail address.
+    </div>
+    <button class="ui button" type="submit">Submit</button>
+</div>
+
+<h2 class="ui header">
+    Warning
+    <div class="sub header">
+        If a form is in warning state, it will automatically show any warning message block.
+    </div>
+</h2>
+
+<div class="ui warning form">
+    <div class="field">
+        <label>E-mail</label>
+        <input type="text" name="" placeholder="joe@schmoe.com">
+    </div>
+    <div class="ui warning message">
+        <div class="header">Could you check something!</div>
+        <ul class="list">
+            <li>That e-mail has been subscribed, but you have not yet clicked the verification link in your e-mail.</li>
+        </ul>
+    </div>
+    <button class="ui button" type="submit">Submit</button>
+</div>
+
+<h2 class="ui header">
+    Field Error
+    <div class="sub header">
+        Individual fields may display an error state
+    </div>
+</h2>
+
+<div class="ui form">
+    <div class="two fields">
+        <div class="error field">
+            <label>First Name</label>
+            <input type="text" name="" placeholder="First Name">
+        </div>
+        <div class="field">
+            <label>Last Name</label>
+            <input type="text" name="" placeholder="Last Name">
+        </div>
+    </div>
+    <div class="error field">
+        <label>Gender</label>
+        <select class="ui selection dropdown">
+            <option value="">Select</option>
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+        </select>
+    </div>
+    <div class="error inline field">
+        <div class="ui checkbox">
+            <label>I agree to the Terms and Conditions</label>
+            <input type="checkbox" name="">
+        </div>
+    </div>
+</div>
+
+<h2 class="ui header">
+    Disabled Field
+    <div class="sub header">
+        Individual fields may be disabled
+    </div>
+</h2>
+
+<div class="ui form">
+    <div class="two fields">
+        <div class="disabled field">
+            <label>First Name</label>
+            <input type="text" name="" placeholder="First Name">
+        </div>
+        <div class="disabled field">
+            <label>Last Name</label>
+            <input type="text" name="" placeholder="Last Name">
+        </div>
+    </div>
+</div>
+
+<h2 class="ui header">
+    Read-Only Field
+    <div class="sub header">
+        Individual fields may be read only
+    </div>
+</h2>
+
+<div class="ui form">
+    <div class="two fields">
+        <div class="field">
+            <label>First Name</label>
+            <input type="text" name="" placeholder="Read Only" readonly="">
+        </div>
+        <div class="field">
+            <label>Last Name</label>
+            <input type="text" name="" placeholder="Read Only" readonly="">
+        </div>
+    </div>
+</div>
+
+<h1 class="ui dividing header">
+    Form Variations
+</h1>
+
+<h2 class="ui header">
+    Size
+    <div class="sub header">
+        A form can vary in size
+    </div>
+</h2>
+
+<div class="ui mini form">
+    <div class="two fields">
+        <div class="field">
+            <label>First Name</label>
+            <input type="text" name="" placeholder="First Name">
+        </div>
+        <div class="field">
+            <label>Last Name</label>
+            <input type="text" name="" placeholder="Last Name">
+        </div>
+    </div>
+    <button class="ui button" type="submit">Submit</button>
+</div>
+
+<div class="ui tiny form">
+    <div class="two fields">
+        <div class="field">
+            <label>First Name</label>
+            <input type="text" name="" placeholder="First Name">
+        </div>
+        <div class="field">
+            <label>Last Name</label>
+            <input type="text" name="" placeholder="Last Name">
+        </div>
+    </div>
+    <button class="ui submit button">Submit</button>
+</div>
+
+<div class="ui small form">
+    <div class="two fields">
+        <div class="field">
+            <label>First Name</label>
+            <input type="text" name="" placeholder="First Name">
+        </div>
+        <div class="field">
+            <label>Last Name</label>
+            <input type="text" name="" placeholder="Last Name">
+        </div>
+    </div>
+    <button class="ui button" type="submit">Submit</button>
+</div>
+
+<div class="ui large form">
+    <div class="two fields">
+        <div class="field">
+            <label>First Name</label>
+            <input type="text" name="" placeholder="First Name">
+        </div>
+        <div class="field">
+            <label>Last Name</label>
+            <input type="text" name="" placeholder="Last Name">
+        </div>
+    </div>
+    <button class="ui submit button">Submit</button>
+</div>
+
+<div class="ui big form">
+    <div class="two fields">
+        <div class="field">
+            <label>First Name</label>
+            <input type="text" name="" placeholder="First Name">
+        </div>
+        <div class="field">
+            <label>Last Name</label>
+            <input type="text" name="" placeholder="Last Name">
+        </div>
+    </div>
+    <button class="ui submit button">Submit</button>
+</div>
+
+<div class="ui huge form">
+    <div class="two fields">
+        <div class="field">
+            <label>First Name</label>
+            <input type="text" name="" placeholder="First Name">
+        </div>
+        <div class="field">
+            <label>Last Name</label>
+            <input type="text" name="" placeholder="Last Name">
+        </div>
+    </div>
+    <button class="ui submit button">Submit</button>
+</div>
+
+<div class="ui massive form">
+    <div class="two fields">
+        <div class="field">
+            <label>First Name</label>
+            <input type="text" name="" placeholder="First Name">
+        </div>
+        <div class="field">
+            <label>Last Name</label>
+            <input type="text" name="" placeholder="Last Name">
+        </div>
+    </div>
+    <button class="ui submit button">Submit</button>
+</div>
+
+<h2 class="ui header">
+    Equal Width Form
+    <div class="sub header">
+        Forms can automatically divide fields to be equal width
+    </div>
+</h2>
+
+<div class="ui equal width form">
+  <div class="fields">
+    <div class="field">
+      <label>Username</label>
+      <input type="text" placeholder="Username">
+    </div>
+    <div class="field">
+      <label>Password</label>
+      <input type="password">
+    </div>
+  </div>
+  <div class="fields">
+    <div class="field">
+      <label>First name</label>
+      <input type="text" placeholder="First Name">
+    </div>
+    <div class="field">
+      <label>Middle name</label>
+      <input type="text" placeholder="Middle Name">
+    </div>
+    <div class="field">
+      <label>Last name</label>
+      <input type="text" placeholder="Last Name">
+    </div>
+  </div>
+</div>
+
+<h2 class="ui header">
+    Inverted
+    <div class="sub header">
+        A form on a dark background may have to invert its color scheme
+    </div>
+</h2>
+
+<div class="ui inverted segment">
+    <div class="ui inverted form">
+        <div class="two fields">
+            <div class="field">
+                <label>First Name</label>
+                <input type="text" name="" placeholder="First Name">
+            </div>
+            <div class="field">
+                <label>Last Name</label>
+                <input type="text" name="" placeholder="Last Name">
+            </div>
+        </div>
+        <div class="field">
+            <label>Gender</label>
+            <select class="ui selection dropdown">
+                <option value="">Select</option>
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+            </select>
+        </div>
+        <div class="inline field">
+            <div class="ui checkbox">
+                <label>I agree to the Terms and Conditions</label>
+                <input type="checkbox" name="">
+            </div>
+        </div>
+        <button class="ui submit button">Submit</button>
+    </div>
+</div>
+
+<h1 class="ui dividing header">
+    Field Variations
+</h1>
+
+<h4 class="ui header">
+    Inline Field
+    <div class="sub header">
+        A field can have its label next to instead of above it.
+    </div>
+</h4>
+
+<div class="ui form">
+    <div class="inline field">
+        <label>Last name</label>
+        <input type="text" name="" placeholder="Full Name">
+    </div>
+</div>
+
+<h2 class="ui header">
+    Width
+    <div class="sub header">
+        A field can specify its width in grid columns
+    </div>
+</h2>
+
+<div class="ui form">
+    <div class="fields">
+        <div class="six wide field">
+            <label>First name</label>
+            <input type="text" placeholder="First Name">
+        </div>
+        <div class="four wide field">
+            <label>Middle name</label>
+            <input type="text" placeholder="Middle Name">
+        </div>
+        <div class="six wide field">
+            <label>Last name</label>
+            <input type="text" placeholder="Last Name">
+        </div>
+    </div>
+    <div class="fields">
+        <div class="two wide field"><input type="text" placeholder="2 Wide"></div>
+        <div class="twelve wide field"><input type="text" placeholder="12 Wide"></div>
+        <div class="two wide field"><input type="text" placeholder="2 Wide"></div>
+    </div>
+    <div class="fields">
+        <div class="eight wide field"><input type="text" placeholder="8 Wide"></div>
+        <div class="six wide field"><input type="text" placeholder="6 Wide"></div>
+        <div class="two wide field"><input type="text" placeholder="2 Wide"></div>
+    </div>
+</div>
+
+<h2 class="ui header">
+    Required
+    <div class="sub header">
+        A field can show that input is mandatory
+    </div>
+</h2>
+
+<div class="ui form">
+    <div class="two fields">
+        <div class="required field">
+            <label>First Name</label>
+            <input type="text" name="" placeholder="First Name">
+        </div>
+        <div class="field">
+            <label>Last Name</label>
+            <input type="text" name="" placeholder="Last Name">
+        </div>
+    </div>
+    <div class="field">
+        <label>Gender</label>
+        <select class="ui selection dropdown">
+            <option value="">Select</option>
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+        </select>
+    </div>
+    <div class="inline required field">
+        <div class="ui checkbox">
+            <label>I agree to the Terms and Conditions</label>
+            <input type="checkbox" name="">
+        </div>
+    </div>
+    <button class="ui submit button">Submit</button>
+</div>
+
+<h1 class="ui dividing header">Group Variations</h1>
+
+<h2 class="ui header">
+    Evenly Divided
+    <div class="sub header">
+        Fields can have their widths divided evenly
+    </div>
+</h2>
+
+<div class="ui form">
+  <div class="three fields">
+    <div class="field">
+      <label>First name</label>
+      <input type="text" placeholder="First Name">
+    </div>
+    <div class="field">
+      <label>Middle name</label>
+      <input type="text" placeholder="Middle Name">
+    </div>
+    <div class="field">
+      <label>Last name</label>
+      <input type="text" placeholder="Last Name">
+    </div>
+  </div>
+</div>
+
+<h2 class="ui header">
+    Grouped Fields
+    <div class="sub header">
+        Fields can show related choices
+    </div>
+</h2>
+
+<div class="ui form">
+  <div class="grouped fields">
+    <div class="field">
+      <div class="ui radio checkbox">
+        <input type="radio" name="fruit" tabindex="0" class="hidden">
+        <label>Apples</label>
+      </div>
+    </div>
+    <div class="field">
+      <div class="ui radio checkbox">
+        <input type="radio" name="fruit" tabindex="0" class="hidden">
+        <label>Oranges</label>
+      </div>
+    </div>
+    <div class="field">
+      <div class="ui radio checkbox">
+        <input type="radio" name="fruit" tabindex="0" class="hidden">
+        <label>Pears</label>
+      </div>
+    </div>
+    <div class="field">
+      <div class="ui radio checkbox">
+        <input type="radio" name="fruit" tabindex="0" class="hidden">
+        <label>Grapefruit</label>
+      </div>
+    </div>
+  </div>
+</div>
+
+<h2 class="ui header">
+    Equal Width Fields
+    <div class="sub header">
+        Fields can automatically divide fields to be equal width
+    </div>
+</h2>
+
+<div class="ui form">
+  <div class="fields">
+    <div class="field">
+      <label>Username</label>
+      <input type="text" placeholder="Username">
+    </div>
+    <div class="field">
+      <label>Password</label>
+      <input type="password">
+    </div>
+  </div>
+  <div class="equal width fields">
+    <div class="field">
+      <label>First name</label>
+      <input type="text" placeholder="First Name">
+    </div>
+    <div class="field">
+      <label>Middle name</label>
+      <input type="text" placeholder="Middle Name">
+    </div>
+    <div class="field">
+      <label>Last name</label>
+      <input type="text" placeholder="Last Name">
+    </div>
+  </div>
+</div>
+
+<h2 class="ui header">
+    Inline Fields
+    <div class="sub header">
+        Multiple fields may be inline in a row
+    </div>
+</h2>
+
+<div class="ui form">
+    <div class="inline fields">
+        <label>Phone Number</label>
+        <div class="field"><input type="text" placeholder="(xxx)"></div>
+        <div class="field"><input type="text" placeholder="xxx"></div>
+        <div class="field"><input type="text" placeholder="xxxx"></div>
+    </div>
+</div>
+
+<div class="ui form">
+  <div class="inline fields">
+    <label>What's your favorite fruit?</label>
+    <div class="field">
+      <div class="ui radio checkbox">
+        <input type="radio" name="fruit" tabindex="0" class="hidden">
+        <label>Apples</label>
+      </div>
+    </div>
+    <div class="field">
+      <div class="ui radio checkbox">
+        <input type="radio" name="fruit" tabindex="0" class="hidden">
+        <label>Oranges</label>
+      </div>
+    </div>
+    <div class="field">
+      <div class="ui radio checkbox">
+        <input type="radio" name="fruit" tabindex="0" class="hidden">
+        <label>Pears</label>
+      </div>
+    </div>
+    <div class="field">
+      <div class="ui radio checkbox">
+        <input type="radio" name="fruit" tabindex="0" class="hidden">
+        <label>Grapefruit</label>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+

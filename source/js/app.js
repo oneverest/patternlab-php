@@ -3,6 +3,7 @@
 $(document).ready(function(){
     // All your normal JS code goes in here
     $(".rating").rating();
+    $(".ui.checkbox").checkbox();
 
     $('.message .close')
       .on('click', function() {
@@ -12,6 +13,13 @@ $(document).ready(function(){
         ;
       })
     ;
+
+    $('.ui.ignored.label')
+      .on('click', function(e) {
+        let target = e.currentTarget;
+        console.log(target.dataset.state);
+        $('.autumn.leaf').transition(target.dataset.state);
+      });
 
     $('.ui.dropdown').dropdown();
 
@@ -60,6 +68,7 @@ $(document).ready(function(){
       .sticky({
       context: '#example1'
     });
+
     $('.ui.sticky.example2').sticky({
       context: '#example2',
       pushing: true

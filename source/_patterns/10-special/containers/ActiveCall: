@@ -1,0 +1,88 @@
+ActiveCall:
+
+account_id
+callid
+direction - 0 呼入 1 呼出
+fromattr
+caller
+callee
+uuid
+second_uuid
+created
+
+uniq index:
+    callid
+
+index:
+    account_id,direction,created
+
+
+
+bgapi playback('$${hold_music}')
+
+bgapi playback 
+
+
+bridge sofia/external/18008071065@${sip_to_host};fs_path=sip:${sip_network_ip}:${sip_network_port}
+
+api bridge sofia/external/18008071065@${sip_to_host};fs_path=sip:${sip_network_ip}:${sip_network_port}
+
+
+bgapi uuid_bridge 9d4278a2-7fa6-4522-a70b-c60d3d378baf {sip_h_X-Redirect-To-User=p26796000005}sofia/external/18008071065@im2beta.kf5.com;fs_path=sip:10.10.32.38:8888
+
+
+
+sendmsg 144548d2-1e54-4891-be96-0cd048b944e7
+call-command: execute
+execute-app-name: bridge
+execute-app-arg: {sip_h_X-Redirect-To-User=p26796000005}sofia/external/18008071065@${sip_to_host};fs_path=sip:${sip_network_ip}:${sip_network_port}
+
+
+
+sendmsg 144548d2-1e54-4891-be96-0cd048b944e7
+call-command: execute
+execute-app-name: bridge
+execute-app-arg: sofia/external/18008071065@${sip_to_host};fs_path=sip:${sip_network_ip}:${sip_network_port}
+
+sofia/external/18008071065@${sip_to_host};fs_path=sip:${sip_network_ip}:${sip_network_port}
+
+SELECT t.voip,t.number,s.host,s.port,ms.host as mshost,ms.port as msport FROM pstn t LEFT JOIN app a on t.app_id = a.id LEFT JOIN account acc on acc.id=a.account_id LEFT JOIN server s on s.id=acc.server_id LEFT JOIN media_server ms on ms.id=acc.media_server_id WHERE t.domain='im2beta.kf5.com';
+
+bgapi originate sofia/external/a26796000008@im2beta.kf5.com;fs_path=sip:10.10.32.38:8888 agentmakecall XML mypublic 18008071065 18008071065
+
+bgapi originate sofia/external/a26796000006@im2beta.kf5.com;fs_path=sip:10.10.32.38:8888 test XML myfeatures
+
+curl -v -X POST -H "Content-Type: application/json" -H "Authorization: MTU1NzIxNTM4Mw==" -H "X-API-Token: d2a88723dcafcaebe0fcc8b955ac4138"  http://localhost:8041/outbound/playDemoTTS -d '{"callid":"3aac0d90-ea38-4fac-853b-7f6591b87cee"}'
+
+
+bgapi originate [sip_h_X-test-var1=1,pstn_account=3333333333]sofia/external/a26796000006@im2beta.kf5.com;fs_path=sip:10.10.32.38:8888 agentmakecall XML mypublic 18008071065 18008071065
+
+php -r '$timestamp=time();$secretKey="12345";$authorization=base64_encode($timestamp);$token=md5($timestamp.":".$secretKey);print_r("Authorization: ${authorization}\n");print_r("X-API-Token: ${token}\n");'
+
+计费，cdr，三方通话
+
+
+呼入：
+1. 
+
+
+php -r '$timestamp=time();$secretKey=1;$authorization=base64_encode($timestamp);$token=md5($timestamp.":".$secretKey);print_r("Authorization: ${authorization}\n");print_r("X-API-Token: ${token}\n");'
+
+php -r '$a=1; \
+        var_dump($a);$b=2;'
+
+
+curl -v -X POST -H "Content-Type: application/json" -H "Authorization: MTU1NzIxNTM4Mw==" -H "X-API-Token: d2a88723dcafcaebe0fcc8b955ac4138"  http://localhost:8041/outbound/playDemoTTS -d '{"callid":"3aac0d90-ea38-4fac-853b-7f6591b87cee"}'
+
+curl -v -X POST -H "Content-Type: application/json" -H "Authorization: MTU1NzIxNTM4Mw==" -H "X-API-Token: d2a88723dcafcaebe0fcc8b955ac4138"  http://localhost:8041/outbound/transfer -d '{"callid":"0c425e4d-42cf-4169-b133-541510059d9d"}'
+
+
+
+
+a26796000006@im2beta.kf5.com
+
+
+curl -v -X POST -H "Content-Type: application/json" -H "Authorization: MTU1NzIxNTM4Mw==" -H "X-API-Token: d2a88723dcafcaebe0fcc8b955ac4138"  http://localhost:3010/fs/originate/agentMakeCall -d '{"agent":"a26796000006@im2beta.kf5.com","dest_number":"18008071065","display":"02885585181"}'
+
+
+curl -v -X POST -H "Content-Type: application/json" -H "Authorization: MTU1NzIxNTM4Mw==" -H "X-API-Token: d2a88723dcafcaebe0fcc8b955ac4138"  http://localhost:3010/fs/originate/agentMakeCall -d '{"agent":"a26796000006@im2beta.kf5.com","dest_number":"18008071065","display":"02881455967"}'

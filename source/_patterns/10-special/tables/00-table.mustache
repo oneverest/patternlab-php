@@ -1,0 +1,2039 @@
+<h1 class="ui dividing header">Types</h1>
+<h2 class="ui dividing header">
+    Table
+    <div class="sub header">A standard table</div>
+</h2>
+
+<div class="ui success message">
+    Tables will automatically stack their layouts for mobile devices. To disable this behavior, use the <b>unstackable</b> variation or <b>tablet stackable</b> to allow responsive adjustments for tablet.
+</div>
+<table class="ui celled table">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Age</th>
+            <th>Job</th>
+        </tr>
+    </thead>
+  <tbody>
+    <tr>
+      <td data-label="Name">James</td>
+      <td data-label="Age">24</td>
+      <td data-label="Job">Engineer</td>
+    </tr>
+    <tr>
+      <td data-label="Name">Jill</td>
+      <td data-label="Age">26</td>
+      <td data-label="Job">Engineer</td>
+    </tr>
+    <tr>
+      <td data-label="Name">Elyse</td>
+      <td data-label="Age">24</td>
+      <td data-label="Job">Designer</td>
+    </tr>
+  </tbody>
+</table>
+
+<table class="ui celled padded table">
+  <thead>
+    <tr>
+      <th class="single line">Evidence Rating</th>
+      <th>Effect</th>
+      <th>Efficacy</th>
+      <th>Consensus</th>
+      <th>Comments</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><h2 class="ui center aligned header">A</h2></td>
+      <td class="single line">Power Output</td>
+      <td><div class="ui star rating" data-rating="3" data-max-rating="3"></div></td>
+      <td>
+        80% <br>
+        <a href="#">18 studies</a>
+      </td>
+      <td>Creatine supplementation is the reference compound for increasing muscular creatine levels; there is variability in this increase, however, with some nonresponders.</td>
+    </tr>
+    <tr>
+      <td><h2 class="ui center aligned header">A</h2></td>
+      <td class="single line">Power Output</td>
+      <td><div class="ui star rating" data-rating="3" data-max-rating="3"></div></td>
+      <td>
+        80% <br>
+        <a href="#">18 studies</a>
+      </td>
+      <td>Creatine supplementation is the reference compound for increasing muscular creatine levels; there is variability in this increase, however, with some nonresponders.</td>
+    </tr>
+  </tbody>
+
+  <tfoot>
+    <tr>
+      <th colspan="5">
+        <div class="ui right floated pagination menu">
+          <a class="icon item"><i class="chevron left icon"></i></a>
+          <a class="item">1</a>
+          <a class="item">2</a>
+          <a class="item">3</a>
+          <a class="item">4</a>
+          <a class="icon item"><i class="chevron right icon"></i></a>
+        </div>
+      </th>
+    </tr>
+  </tfoot>
+</table>
+
+<table class="ui very basic collapsing celled table">
+  <thead>
+    <tr>
+      <th>Employee</th>
+      <th>Correct Guesses</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>
+        <h4 class="ui image header">
+          <img class="ui mini rounded image" src="/images/avatar/lena.png">
+          <div class="content">
+            Lena
+            <div class="sub header">Human Resources</div>
+          </div>
+        </h4>
+      </td>
+      <td>22</td>
+    </tr>
+
+    <tr>
+      <td>
+        <h4 class="ui image header">
+          <img class="ui mini rounded image" src="/images/avatar/matthew.png">
+          <div class="content">
+            Matthew
+            <div class="sub header">Fabric Design</div>
+          </div>
+        </h4>
+      </td>
+      <td>15</td>
+    </tr>
+
+    <tr>
+      <td>
+        <h4 class="ui image header">
+          <img class="ui mini rounded image" src="/images/avatar/lindsay.png">
+          <div class="content">
+            Lindsay
+            <div class="sub header">Entertainment</div>
+          </div>
+        </h4>
+      </td>
+      <td>12</td>
+    </tr>
+
+    <tr>
+      <td>
+        <h4 class="ui image header">
+          <img class="ui mini rounded image" src="/images/avatar/mark.png">
+          <div class="content">
+            Mark
+            <div class="sub header">Executive</div>
+          </div>
+        </h4>
+      </td>
+      <td>11</td>
+    </tr>
+  </tbody>
+</table>
+
+<table class="ui celled table">
+  <thead>
+    <tr>
+      <th colspan="3">Git Repository</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td class="collapsing">
+        <i class="folder icon"></i> node_modules
+      </td>
+      <td>Initial commit</td>
+      <td class="right aligned collapsing">10 hours ago</td>
+    </tr>
+
+    <tr>
+      <td>
+        <i class="folder icon"></i> test
+      </td>
+      <td>Initial commit</td>
+      <td class="right aligned">10 hours ago</td>
+    </tr>
+
+    <tr>
+      <td>
+        <i class="folder icon"></i> build
+      </td>
+      <td>Initial commit</td>
+      <td class="right aligned">10 hours ago</td>
+    </tr>
+
+    <tr>
+      <td>
+        <i class="outline file icon"></i> package.json
+      </td>
+      <td>Initial commit</td>
+      <td class="right aligned">10 hours ago</td>
+    </tr>
+
+    <tr>
+      <td>
+        <i class="outline file icon"></i> Gruntfile.js
+      </td>
+      <td>Initial commit</td>
+      <td class="right aligned">10 hours ago</td>
+    </tr>
+  </tbody>
+</table>
+
+<h2 class="ui dividing header">
+  Definition
+  <div class="sub header">
+    A table may be formatted to emphasize a first column that defines a rows content
+  </div>
+</h2>
+<div class="ui info message">
+  Definition tables are designed to display on a single background color. You can adjust this by changing <b>@definitionPageBackground</b>, or specifying a background color on the first cell
+</div>
+
+<table class="ui definition table">
+  <thead>
+    <tr>
+      <th></th>
+      <th>Arguments</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>reset rating</td>
+      <td>None</td>
+      <td>Resets rating to default value</td>
+    </tr>
+    <tr>
+      <td>set rating</td>
+      <td>rating (integer)</td>
+      <td>Sets the current star rating to specified value</td>
+    </tr>
+  </tbody>
+</table>
+
+<table class="ui definition compact celled table">
+  <thead>
+    <tr>
+      <th>
+      </th>
+      <th>Name</th>
+      <th>Registration Date</th>
+      <th>E-mail address</th>
+      <th>Premium Plan</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td class="collapsing">
+        <div class="ui fitted slider checkbox">
+          <input type="checkbox" name="">
+        </div>
+      </td>
+      <td>John Lilki</td>
+      <td>September 14, 2013</td>
+      <td>jhlilk22@yahoo.com</td>
+      <td>No</td>
+    </tr>
+    <tr>
+      <td class="collapsing">
+        <div class="ui fitted slider checkbox">
+          <input type="checkbox" name="">
+        </div>
+      </td>
+      <td>John Lilki</td>
+      <td>September 14, 2013</td>
+      <td>jhlilk22@yahoo.com</td>
+      <td>No</td>
+    </tr>
+    <tr>
+      <td class="collapsing">
+        <div class="ui fitted slider checkbox">
+          <input type="checkbox" name="">
+        </div>
+      </td>
+      <td>John Lilki</td>
+      <td>September 14, 2013</td>
+      <td>jhlilk22@yahoo.com</td>
+      <td>No</td>
+    </tr>
+  </tbody>
+  <tfoot class="full-width">
+    <tr>
+      <th></th>
+      <th colspan="4">
+        <div class="ui button">Approve</div>
+        <div class="ui disabled button">Approve All</div>
+        <div class="ui right floated primary small icon labeled button">
+          <i class="user icon"></i>
+          Add User
+        </div>
+      </th>
+    </tr>
+  </tfoot>
+</table>
+
+<h2 class="ui dividing header">
+  Structured
+  <div class="sub header">
+    A table can be formatted to display complex structured data
+  </div>
+</h2>
+<div class="ui info message">
+  <p>UI tables use <b>border-collapse: separate</b> to allow for tables to receive styles that cannot usually be applied to tables like <b>border-radius</b>. However this can cause some cell borders to appear missing with complex layouts that use <b>rowspan</b> or <b>colspan</b> and rows with varying column count.</p>
+  <p><b>ui structured table</b> does not support some style features, but can correctly display all valid HTML table content.</p>
+</div>
+
+<table class="ui structured celled table">
+  <thead>
+    <tr>
+      <th rowspan="2">Name</th>
+      <th rowspan="2">Type</th>
+      <th rowspan="2">Files</th>
+      <th colspan="3">Languages</th>
+    </tr>
+    <tr>
+      <th>Ruby</th>
+      <th>Javascript</th>
+      <th>Python</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Alpha Team</td>
+      <td>Project 1</td>
+      <td class="right aligned">2</td>
+      <td class="center aligned"><i class="large green checkmark icon"></i></td>
+      <td></td>
+      <td></td>
+    </tr>
+
+    <tr>
+      <td rowspan="3">Beta Team</td>
+      <td>Project 1</td>
+      <td class="right aligned">52</td>
+      <td class="center aligned">
+        <i class="large green checkmark icon"></i>
+      </td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Project 2</td>
+      <td class="right aligned">12</td>
+      <td></td>
+      <td class="center aligned">
+        <i class="large green checkmark icon"></i>
+      </td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Project 3</td>
+      <td class="right aligned">21</td>
+      <td class="center aligned">
+        <i class="large green checkmark icon"></i>
+      </td>
+      <td></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+<h1 class="ui dividing header">States</h1>
+
+<h2 class="ui dividing header">
+  Positive / Negative
+  <div class="sub header">A cell or row may let a user know whether a value is good or bad</div>
+</h2>
+
+<table class="ui celled table">
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Status</th>
+      <th>Notes</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>No Name Specified</td>
+      <td>Unknown</td>
+      <td class="negative">None</td>
+    </tr>
+
+    <tr class="positive">
+      <td>Jimmy</td>
+      <td><i class="green checkmark icon"></i> Approved</td>
+      <td>None</td>
+    </tr>
+
+    <tr>
+      <td>Jamie</td>
+      <td>Unknown</td>
+      <td class="positive"><i class="green close icon"></i> Requires call</td>
+    </tr>
+
+    <tr class="negative">
+      <td>Jill</td>
+      <td>Unknown</td>
+      <td>None</td>
+    </tr>
+  </tbody>
+</table>
+
+<h2 class="ui dividing header">
+  Error
+  <div class="sub header">
+    A cell or row may call attention to an error or a negative value
+  </div>
+</h2>
+
+<table class="ui celled table">
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Status</th>
+      <th>Notes</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>No Name Specified</td>
+      <td>Approved</td>
+      <td>None</td>
+    </tr>
+    <tr class="error">
+      <td>Jimmy</td>
+      <td>Cannot pull data</td>
+      <td>None</td>
+    </tr>
+    <tr>
+      <td>Jamie</td>
+      <td>Approved</td>
+      <td class="error"><i class="attention icon"></i> Classified</td>
+    </tr>
+    <tr>
+      <td>Jill</td>
+      <td>Approved</td>
+      <td>None</td>
+    </tr>
+  </tbody>
+</table>
+
+<h2 class="ui dividing header">
+  Warning
+  <div class="sub header">
+    A cell or row may warn a user
+  </div>
+</h2>
+<table class="ui celled table">
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Status</th>
+      <th>Notes</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>No Name Specified</td>
+      <td>Unknown</td>
+      <td>None</td>
+    </tr>
+    <tr class="warning">
+      <td>Jimmy</td>
+      <td><i class="attention icon"></i> Requires Action</td>
+      <td>None</td>
+    </tr>
+    <tr>
+      <td>Jamie</td>
+      <td>Unknown</td>
+      <td class="warning"><i class="attention icon"></i> Hostile</td>
+    </tr>
+    <tr>
+      <td>Jill</td>
+      <td>Unknown</td>
+      <td>None</td>
+    </tr>
+  </tbody>
+</table>
+
+<h2 class="ui dividing header">
+  Active
+  <div class="sub header">
+    A cell or row can be active or selected by a user
+  </div>
+</h2>
+<table class="ui celled table">
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Status</th>
+      <th>Notes</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Jamie</td>
+      <td>Approved</td>
+      <td>Requires call</td>
+    </tr>
+    <tr class="active">
+      <td>John</td>
+      <td>Selected</td>
+      <td>None</td>
+    </tr>
+    <tr>
+      <td>Jamie</td>
+      <td>Approved</td>
+      <td>Requires call</td>
+    </tr>
+    <tr>
+      <td class="active">Jill</td>
+      <td>Approved</td>
+      <td>None</td>
+    </tr>
+  </tbody>
+</table>
+
+<h2 class="ui dividing header">
+  Disabled
+  <div class="sub header">
+    A cell can be disabled
+  </div>
+</h2>
+<table class="ui celled table">
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Status</th>
+      <th>Notes</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr class="disabled">
+      <td>Jamie</td>
+      <td>Approved</td>
+      <td>Requires call</td>
+    </tr>
+    <tr>
+      <td>John</td>
+      <td>Selected</td>
+      <td>None</td>
+    </tr>
+    <tr>
+      <td>Jamie</td>
+      <td>Approved</td>
+      <td>Requires call</td>
+    </tr>
+    <tr>
+      <td class="disabled">Jill</td>
+      <td>Approved</td>
+      <td>None</td>
+    </tr>
+  </tbody>
+</table>
+
+<h1 class="ui dividing header">
+  Variations
+</h1>
+
+<h2 class="ui dividing header">
+  Single Line
+  <div class="sub header">
+    A table can specify that its cell contents should remain on a single line, and not wrap.
+  </div>
+</h2>
+
+<table class="ui single line table">
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Registration Date</th>
+      <th>E-mail address</th>
+      <th>Premium Plan</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>John Lilki</td>
+      <td>September 14, 2013</td>
+      <td>jhlilk22@yahoo.com</td>
+      <td>No</td>
+    </tr>
+    <tr>
+      <td>Jamie Harington</td>
+      <td>January 11, 2014</td>
+      <td>jamieharingonton@yahoo.com</td>
+      <td>Yes</td>
+    </tr>
+    <tr>
+      <td>Jill Lewis</td>
+      <td>May 11, 2014</td>
+      <td>jilsewris22@yahoo.com</td>
+      <td>Yes</td>
+    </tr>
+  </tbody>
+</table>
+
+<h2 class="ui dividing header">
+  Fixed
+  <div class="sub header">
+    A table can use <b>table-layout: fixed</b> a special faster form of table rendering that does not resize table cells based on content.
+  </div>
+</h2>
+
+<table class="ui fixed table">
+  <thead>
+    <tr><th>Name</th>
+    <th>Status</th>
+    <th>Description</th>
+  </tr></thead>
+  <tbody>
+    <tr>
+      <td>John</td>
+      <td>Approved</td>
+      <td>John is an interesting boy but sometimes you don't really have enough room to describe everything you'd like</td>
+    </tr>
+    <tr>
+      <td>Jamie</td>
+      <td>Approved</td>
+      <td>Jamie is a kind girl but sometimes you don't really have enough room to describe everything you'd like</td>
+    </tr>
+    <tr>
+      <td>Jill</td>
+      <td>Denied</td>
+      <td>Jill is an alright girl but sometimes you don't really have enough room to describe everything you'd like</td>
+    </tr>
+  </tbody>
+</table>
+
+<div class="ui info message">
+  Fixed <b>single line</b> tables will automatically ensure content that does not fit in a single line will receive "..." ellipsis
+</div>
+
+<table class="ui fixed single line celled table">
+  <thead>
+    <tr><th>Name</th>
+    <th>Status</th>
+    <th>Description</th>
+  </tr></thead>
+  <tbody>
+    <tr>
+      <td>John</td>
+      <td>Approved</td>
+      <td title="This is much too long to fit I'm sorry about that">This is much too long to fit I'm sorry about that Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+      tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+      quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+      consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+      cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+      proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</td>
+    </tr>
+    <tr>
+      <td>Jamie</td>
+      <td>Approved</td>
+      <td>Shorter description</td>
+    </tr>
+    <tr>
+      <td>Jill</td>
+      <td>Denied</td>
+      <td>Shorter description</td>
+    </tr>
+  </tbody>
+</table>
+
+<h2 class="ui dividing header">
+  Stacking
+  <div class="sub header">
+    A table can specify how it stacks table content responsively
+  </div>
+</h2>
+
+<table class="ui unstackable table">
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Status</th>
+      <th class="right aligned">Notes</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>John</td>
+      <td>Approved</td>
+      <td class="right aligned">None</td>
+    </tr>
+    <tr>
+      <td>Jamie</td>
+      <td>Approved</td>
+      <td class="right aligned">Requires call</td>
+    </tr>
+    <tr>
+      <td>Jill</td>
+      <td>Denied</td>
+      <td class="right aligned">None</td>
+    </tr>
+  </tbody>
+</table>
+<table class="ui tablet stackable table">
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Status</th>
+      <th class="right aligned">Notes</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>John</td>
+      <td>Approved</td>
+      <td class="right aligned">None</td>
+    </tr>
+    <tr>
+      <td>Jamie</td>
+      <td>Approved</td>
+      <td class="right aligned">Requires call</td>
+    </tr>
+    <tr>
+      <td>Jill</td>
+      <td>Denied</td>
+      <td class="right aligned">None</td>
+    </tr>
+  </tbody>
+</table>
+
+<h2 class="ui dividing header">
+  Selectable Row
+  <div class="sub header">
+    A table can have its rows appear selectable
+  </div>
+</h2>
+<table class="ui selectable celled table">
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Status</th>
+      <th>Notes</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>John</td>
+      <td>No Action</td>
+      <td>None</td>
+    </tr>
+    <tr>
+      <td>Jamie</td>
+      <td>Approved</td>
+      <td>Requires call</td>
+    </tr>
+    <tr>
+      <td>Jill</td>
+      <td>Denied</td>
+      <td>None</td>
+    </tr>
+    <tr class="warning">
+      <td>John</td>
+      <td>No Action</td>
+      <td>None</td>
+    </tr>
+    <tr>
+      <td>Jamie</td>
+      <td class="positive">Approved</td>
+      <td class="warning">Requires call</td>
+    </tr>
+    <tr>
+      <td>Jill</td>
+      <td class="negative">Denied</td>
+      <td>None</td>
+    </tr>
+  </tbody>
+</table>
+
+<table class="ui selectable inverted table">
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Status</th>
+      <th class="right aligned">Notes</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>John</td>
+      <td>Approved</td>
+      <td class="right aligned">None</td>
+    </tr>
+    <tr>
+      <td>Jamie</td>
+      <td>Approved</td>
+      <td class="right aligned">Requires call</td>
+    </tr>
+    <tr>
+      <td>Jill</td>
+      <td>Denied</td>
+      <td class="right aligned">None</td>
+    </tr>
+  </tbody>
+</table>
+
+<h2 class="ui dividing header">
+  Selectable Cell
+  <div class="sub header">
+    A table cell can be selectable
+  </div>
+</h2>
+<div class="ui info message">
+  Using an <b>a</b> link inside a selectable cell will automatically make the hit box the entire cell area. By default links will inherit their cell color.
+</div>
+
+<table class="ui celled table">
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Status</th>
+      <th>Edit</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>John</td>
+      <td>No Action</td>
+      <td class="selectable">
+        <a href="#">Edit</a>
+      </td>
+    </tr>
+    <tr>
+      <td>Jamie</td>
+      <td>Approved</td>
+      <td class="selectable">
+        <a href="#">Edit</a>
+      </td>
+    </tr>
+    <tr>
+      <td>Jill</td>
+      <td>Denied</td>
+      <td class="selectable">
+        <a href="#">Edit</a>
+      </td>
+    </tr>
+    <tr class="warning">
+      <td>John</td>
+      <td>No Action</td>
+      <td class="selectable warning">
+        <a href="#">Requires change</a>
+      </td>
+    </tr>
+    <tr>
+      <td>Jamie</td>
+      <td class="positive">Approved</td>
+      <td class="selectable positive">
+        <a href="#">Approve</a>
+      </td>
+    </tr>
+    <tr>
+      <td>Jill</td>
+      <td class="negative">Denied</td>
+      <td class="selectable negative">
+        <a href="#">Remove</a>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<h2 class="ui dividing header">
+  Vertical Alignment
+  <div class="sub header">
+    A table header, row, or cell can adjust its vertical alignment
+  </div>
+</h2>
+
+<table class="ui striped table">
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Status</th>
+      <th>Notes</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr class="top aligned">
+      <td>John</td>
+      <td>Approved</td>
+      <td class="top aligned">
+        Notes<br>
+        1<br>
+        2<br>
+      </td>
+    </tr>
+    <tr>
+      <td>Jamie</td>
+      <td class="bottom aligned">Approved</td>
+      <td>
+        Notes<br>
+        1<br>
+        2<br>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<h2 class="ui dividing header">
+  Text Alignment
+  <div class="sub header">
+    A table header, row, or cell can adjust its text alignment
+  </div>
+</h2>
+<table class="ui striped table">
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Status</th>
+      <th class="right aligned">Notes</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr class="center aligned">
+      <td>John</td>
+      <td>Approved</td>
+      <td class="right aligned">None</td>
+    </tr>
+    <tr>
+      <td>Jamie</td>
+      <td>Approved</td>
+      <td class="right aligned">Requires call</td>
+    </tr>
+    <tr>
+      <td>Jill</td>
+      <td>Denied</td>
+      <td class="right aligned">None</td>
+    </tr>
+  </tbody>
+</table>
+
+<h2 class="ui dividing header">
+  Stripped
+  <div class="sub header">
+    A table can stripe alternate rows of content with a darker color to increase contrast
+  </div>
+</h2>
+
+<table class="ui striped table">
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Date Joined</th>
+      <th>E-mail</th>
+      <th>Called</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>John Lilki</td>
+      <td>September 14, 2013</td>
+      <td>jhlilk22@yahoo.com</td>
+      <td>No</td>
+    </tr>
+    <tr>
+      <td>Jamie Harington</td>
+      <td>January 11, 2014</td>
+      <td>jamieharingonton@yahoo.com</td>
+      <td>Yes</td>
+    </tr>
+    <tr>
+      <td>Jill Lewis</td>
+      <td>May 11, 2014</td>
+      <td>jilsewris22@yahoo.com</td>
+      <td>Yes</td>
+    </tr>
+    <tr>
+      <td>John Lilki</td>
+      <td>September 14, 2013</td>
+      <td>jhlilk22@yahoo.com</td>
+      <td>No</td>
+    </tr>
+    <tr>
+      <td>John Lilki</td>
+      <td>September 14, 2013</td>
+      <td>jhlilk22@yahoo.com</td>
+      <td>No</td>
+    </tr>
+    <tr>
+      <td>Jamie Harington</td>
+      <td>January 11, 2014</td>
+      <td>jamieharingonton@yahoo.com</td>
+      <td>Yes</td>
+    </tr>
+    <tr>
+      <td>Jill Lewis</td>
+      <td>May 11, 2014</td>
+      <td>jilsewris22@yahoo.com</td>
+      <td>Yes</td>
+    </tr>
+    <tr>
+      <td>John Lilki</td>
+      <td>September 14, 2013</td>
+      <td>jhlilk22@yahoo.com</td>
+      <td>No</td>
+    </tr>
+  </tbody>
+</table>
+
+<h2 class="ui dividing header">
+  Celled
+  <div class="sub header">
+    A table may be divided each row into separate cells
+  </div>
+</h2>
+
+<table class="ui celled table">
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Status</th>
+      <th>Notes</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>John</td>
+      <td>Approved</td>
+      <td>None</td>
+    </tr>
+    <tr>
+      <td>Jamie</td>
+      <td>Approved</td>
+      <td>Requires call</td>
+    </tr>
+    <tr>
+      <td>Jill</td>
+      <td>Denied</td>
+      <td>None</td>
+    </tr>
+  </tbody>
+  <tfoot>
+    <tr><th>3 People</th>
+    <th>2 Approved</th>
+    <th></th>
+  </tr></tfoot>
+</table>
+
+<h2 class="ui dividing header">
+  Basic
+  <div class="sub header">
+    A table can reduce its complexity to increase readability.
+  </div>
+</h2>
+
+<table class="ui basic table">
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Status</th>
+      <th>Notes</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>John</td>
+      <td>Approved</td>
+      <td>None</td>
+    </tr>
+    <tr>
+      <td>Jamie</td>
+      <td>Approved</td>
+      <td>Requires call</td>
+    </tr>
+    <tr>
+      <td>Jill</td>
+      <td>Denied</td>
+      <td>None</td>
+    </tr>
+  </tbody>
+</table>
+
+<table class="ui very basic table">
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Status</th>
+      <th>Notes</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>John</td>
+      <td>Approved</td>
+      <td>None</td>
+    </tr>
+    <tr>
+      <td>Jamie</td>
+      <td>Approved</td>
+      <td>Requires call</td>
+    </tr>
+    <tr>
+      <td>Jill</td>
+      <td>Denied</td>
+      <td>None</td>
+    </tr>
+  </tbody>
+</table>
+
+<h2 class="ui dividing header">
+  Collapsing Cell
+  <div class="sub header">
+    A cell can be collapsing so that it only uses as much space as required
+  </div>
+</h2>
+<div class="ui warning icon message">
+  <i class="warning icon"></i>
+  To ensure icons don't wrap to a separate line you must either specify collapsing on the widest row in the collapsing column, or on all rows
+</div>
+<table class="ui table">
+  <tbody>
+    <tr>
+      <td class="collapsing">
+        <i class="folder icon"></i> node_modules
+      </td>
+      <td>Initial commit</td>
+      <td>10 hours ago</td>
+    </tr>
+    <tr>
+      <td>
+        <i class="folder icon"></i> test
+      </td>
+      <td>Initial commit</td>
+      <td>10 hours ago</td>
+    </tr>
+    <tr>
+      <td>
+        <i class="folder icon"></i> build
+      </td>
+      <td>Initial commit</td>
+      <td>10 hours ago</td>
+    </tr>
+  </tbody>
+</table>
+
+<h2 class="ui dividing header">
+  Column Count
+  <div class="sub header">
+    A table can specify its column count to divide its content evenly
+  </div>
+</h2>
+<div class="ui info message">
+  Tables use a 16 column grid similar to ui grid
+</div>
+
+<table class="ui table">
+  <thead>
+    <tr><th class="ten wide">Name</th>
+    <th class="six wide">Status</th>
+  </tr></thead>
+  <tbody>
+    <tr>
+      <td>John</td>
+      <td>Approved</td>
+    </tr>
+    <tr>
+      <td>Jamie</td>
+      <td>Approved</td>
+    </tr>
+    <tr>
+      <td>Jill</td>
+      <td>Denied</td>
+    </tr>
+  </tbody>
+  <tfoot>
+    <tr><th>3 People</th>
+    <th>2 Approved</th>
+  </tr></tfoot>
+</table>
+
+<h2 class="ui dividing header">
+  Collapsing
+  <div class="sub header">
+    A table can be collapsing, taking up only as much space as its rows.
+  </div>
+</h2>
+
+<table class="ui collapsing table">
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Status</th>
+      <th>Notes</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>John</td>
+      <td>Approved</td>
+      <td>None</td>
+    </tr>
+    <tr>
+      <td>Jamie</td>
+      <td>Approved</td>
+      <td>Requires call</td>
+    </tr>
+    <tr>
+      <td>Jill</td>
+      <td>Denied</td>
+      <td>None</td>
+    </tr>
+  </tbody>
+  <tfoot>
+    <tr><th>3 People</th>
+    <th>2 Approved</th>
+    <th></th>
+  </tr></tfoot>
+</table>
+
+<h2 class="ui dividing header">
+  Colored
+  <div class="sub header">
+    A table can be given a color to distinguish it from other tables.
+  </div>
+</h2>
+
+<table class="ui red table">
+  <thead>
+    <tr><th>Food</th>
+    <th>Calories</th>
+    <th>Protein</th>
+  </tr></thead><tbody>
+    <tr>
+      <td>Apples</td>
+      <td>200</td>
+      <td>0g</td>
+    </tr>
+    <tr>
+      <td>Orange</td>
+      <td>310</td>
+      <td>0g</td>
+    </tr>
+  </tbody>
+</table>
+<table class="ui orange table">
+  <thead>
+    <tr><th>Food</th>
+    <th>Calories</th>
+    <th>Protein</th>
+  </tr></thead><tbody>
+    <tr>
+      <td>Apples</td>
+      <td>200</td>
+      <td>0g</td>
+    </tr>
+    <tr>
+      <td>Orange</td>
+      <td>310</td>
+      <td>0g</td>
+    </tr>
+  </tbody>
+</table>
+<table class="ui yellow table">
+  <thead>
+    <tr><th>Food</th>
+    <th>Calories</th>
+    <th>Protein</th>
+  </tr></thead><tbody>
+    <tr>
+      <td>Apples</td>
+      <td>200</td>
+      <td>0g</td>
+    </tr>
+    <tr>
+      <td>Orange</td>
+      <td>310</td>
+      <td>0g</td>
+    </tr>
+  </tbody>
+  </table>
+<table class="ui olive table">
+  <thead>
+    <tr><th>Food</th>
+    <th>Calories</th>
+    <th>Protein</th>
+  </tr></thead><tbody>
+    <tr>
+      <td>Apples</td>
+      <td>200</td>
+      <td>0g</td>
+    </tr>
+    <tr>
+      <td>Orange</td>
+      <td>310</td>
+      <td>0g</td>
+    </tr>
+  </tbody>
+</table>
+<table class="ui green table">
+  <thead>
+    <tr><th>Food</th>
+    <th>Calories</th>
+    <th>Protein</th>
+  </tr></thead><tbody>
+    <tr>
+      <td>Apples</td>
+      <td>200</td>
+      <td>0g</td>
+    </tr>
+    <tr>
+      <td>Orange</td>
+      <td>310</td>
+      <td>0g</td>
+    </tr>
+  </tbody>
+</table>
+<table class="ui teal table">
+  <thead>
+    <tr><th>Food</th>
+    <th>Calories</th>
+    <th>Protein</th>
+  </tr></thead><tbody>
+    <tr>
+      <td>Apples</td>
+      <td>200</td>
+      <td>0g</td>
+    </tr>
+    <tr>
+      <td>Orange</td>
+      <td>310</td>
+      <td>0g</td>
+    </tr>
+  </tbody>
+</table>
+<table class="ui blue table">
+  <thead>
+    <tr><th>Food</th>
+    <th>Calories</th>
+    <th>Protein</th>
+  </tr></thead><tbody>
+    <tr>
+      <td>Apples</td>
+      <td>200</td>
+      <td>0g</td>
+    </tr>
+    <tr>
+      <td>Orange</td>
+      <td>310</td>
+      <td>0g</td>
+    </tr>
+  </tbody>
+</table>
+<table class="ui violet table">
+  <thead>
+    <tr><th>Food</th>
+    <th>Calories</th>
+    <th>Protein</th>
+  </tr></thead><tbody>
+    <tr>
+      <td>Apples</td>
+      <td>200</td>
+      <td>0g</td>
+    </tr>
+    <tr>
+      <td>Orange</td>
+      <td>310</td>
+      <td>0g</td>
+    </tr>
+  </tbody>
+</table>
+<table class="ui purple table">
+  <thead>
+    <tr><th>Food</th>
+    <th>Calories</th>
+    <th>Protein</th>
+  </tr></thead><tbody>
+    <tr>
+      <td>Apples</td>
+      <td>200</td>
+      <td>0g</td>
+    </tr>
+    <tr>
+      <td>Orange</td>
+      <td>310</td>
+      <td>0g</td>
+    </tr>
+  </tbody>
+</table>
+<table class="ui pink table">
+  <thead>
+    <tr><th>Food</th>
+    <th>Calories</th>
+    <th>Protein</th>
+  </tr></thead><tbody>
+    <tr>
+      <td>Apples</td>
+      <td>200</td>
+      <td>0g</td>
+    </tr>
+    <tr>
+      <td>Orange</td>
+      <td>310</td>
+      <td>0g</td>
+    </tr>
+  </tbody>
+</table>
+<table class="ui grey table">
+  <thead>
+    <tr><th>Food</th>
+    <th>Calories</th>
+    <th>Protein</th>
+  </tr></thead><tbody>
+    <tr>
+      <td>Apples</td>
+      <td>200</td>
+      <td>0g</td>
+    </tr>
+    <tr>
+      <td>Orange</td>
+      <td>310</td>
+      <td>0g</td>
+    </tr>
+  </tbody>
+</table>
+<table class="ui black table">
+  <thead>
+    <tr><th>Food</th>
+    <th>Calories</th>
+    <th>Protein</th>
+  </tr></thead><tbody>
+    <tr>
+      <td>Apples</td>
+      <td>200</td>
+      <td>0g</td>
+    </tr>
+    <tr>
+      <td>Orange</td>
+      <td>310</td>
+      <td>0g</td>
+    </tr>
+  </tbody>
+</table>
+
+<h2 class="ui dividing header">
+  Inverted
+  <div class="sub header">
+    A table's colors can be inverted
+  </div>
+</h2>
+
+<table class="ui inverted table">
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Status</th>
+      <th>Notes</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>John</td>
+      <td>Approved</td>
+      <td>None</td>
+    </tr>
+    <tr>
+      <td>Jamie</td>
+      <td>Approved</td>
+      <td>Requires call</td>
+    </tr>
+    <tr>
+      <td>Jill</td>
+      <td>Denied</td>
+      <td>None</td>
+    </tr>
+  </tbody>
+  <tfoot>
+    <tr><th>3 People</th>
+    <th>2 Approved</th>
+    <th></th>
+  </tr></tfoot>
+</table>
+
+<table class="ui inverted red table">
+  <thead>
+    <tr><th>Food</th>
+    <th>Calories</th>
+    <th>Protein</th>
+  </tr></thead><tbody>
+    <tr>
+      <td>Apples</td>
+      <td>200</td>
+      <td>0g</td>
+    </tr>
+    <tr>
+      <td>Orange</td>
+      <td>310</td>
+      <td>0g</td>
+    </tr>
+  </tbody>
+</table>
+<table class="ui inverted orange table">
+  <thead>
+    <tr><th>Food</th>
+    <th>Calories</th>
+    <th>Protein</th>
+  </tr></thead><tbody>
+    <tr>
+      <td>Apples</td>
+      <td>200</td>
+      <td>0g</td>
+    </tr>
+    <tr>
+      <td>Orange</td>
+      <td>310</td>
+      <td>0g</td>
+    </tr>
+  </tbody>
+</table>
+<table class="ui inverted yellow table">
+  <thead>
+    <tr><th>Food</th>
+    <th>Calories</th>
+    <th>Protein</th>
+  </tr></thead><tbody>
+    <tr>
+      <td>Apples</td>
+      <td>200</td>
+      <td>0g</td>
+    </tr>
+    <tr>
+      <td>Orange</td>
+      <td>310</td>
+      <td>0g</td>
+    </tr>
+  </tbody>
+</table>
+<table class="ui inverted olive table">
+  <thead>
+    <tr><th>Food</th>
+    <th>Calories</th>
+    <th>Protein</th>
+  </tr></thead><tbody>
+    <tr>
+      <td>Apples</td>
+      <td>200</td>
+      <td>0g</td>
+    </tr>
+    <tr>
+      <td>Orange</td>
+      <td>310</td>
+      <td>0g</td>
+    </tr>
+  </tbody>
+</table>
+<table class="ui inverted green table">
+  <thead>
+    <tr><th>Food</th>
+    <th>Calories</th>
+    <th>Protein</th>
+  </tr></thead><tbody>
+    <tr>
+      <td>Apples</td>
+      <td>200</td>
+      <td>0g</td>
+    </tr>
+    <tr>
+      <td>Orange</td>
+      <td>310</td>
+      <td>0g</td>
+    </tr>
+  </tbody>
+</table>
+<table class="ui inverted teal table">
+  <thead>
+    <tr><th>Food</th>
+    <th>Calories</th>
+    <th>Protein</th>
+  </tr></thead><tbody>
+    <tr>
+      <td>Apples</td>
+      <td>200</td>
+      <td>0g</td>
+    </tr>
+    <tr>
+      <td>Orange</td>
+      <td>310</td>
+      <td>0g</td>
+    </tr>
+  </tbody>
+</table>
+<table class="ui inverted blue table">
+  <thead>
+    <tr><th>Food</th>
+    <th>Calories</th>
+    <th>Protein</th>
+  </tr></thead><tbody>
+    <tr>
+      <td>Apples</td>
+      <td>200</td>
+      <td>0g</td>
+    </tr>
+    <tr>
+      <td>Orange</td>
+      <td>310</td>
+      <td>0g</td>
+    </tr>
+  </tbody>
+</table>
+<table class="ui inverted violet table">
+  <thead>
+    <tr><th>Food</th>
+    <th>Calories</th>
+    <th>Protein</th>
+  </tr></thead><tbody>
+    <tr>
+      <td>Apples</td>
+      <td>200</td>
+      <td>0g</td>
+    </tr>
+    <tr>
+      <td>Orange</td>
+      <td>310</td>
+      <td>0g</td>
+    </tr>
+  </tbody>
+</table>
+<table class="ui inverted purple table">
+  <thead>
+    <tr><th>Food</th>
+    <th>Calories</th>
+    <th>Protein</th>
+  </tr></thead><tbody>
+    <tr>
+      <td>Apples</td>
+      <td>200</td>
+      <td>0g</td>
+    </tr>
+    <tr>
+      <td>Orange</td>
+      <td>310</td>
+      <td>0g</td>
+    </tr>
+  </tbody>
+</table>
+<table class="ui inverted pink table">
+  <thead>
+    <tr><th>Food</th>
+    <th>Calories</th>
+    <th>Protein</th>
+  </tr></thead><tbody>
+    <tr>
+      <td>Apples</td>
+      <td>200</td>
+      <td>0g</td>
+    </tr>
+    <tr>
+      <td>Orange</td>
+      <td>310</td>
+      <td>0g</td>
+    </tr>
+  </tbody>
+</table>
+<table class="ui inverted brown table">
+  <thead>
+    <tr><th>Food</th>
+    <th>Calories</th>
+    <th>Protein</th>
+  </tr></thead><tbody>
+    <tr>
+      <td>Apples</td>
+      <td>200</td>
+      <td>0g</td>
+    </tr>
+    <tr>
+      <td>Orange</td>
+      <td>310</td>
+      <td>0g</td>
+    </tr>
+  </tbody>
+</table>
+<table class="ui inverted grey table">
+  <thead>
+    <tr><th>Food</th>
+    <th>Calories</th>
+    <th>Protein</th>
+  </tr></thead><tbody>
+    <tr>
+      <td>Apples</td>
+      <td>200</td>
+      <td>0g</td>
+    </tr>
+    <tr>
+      <td>Orange</td>
+      <td>310</td>
+      <td>0g</td>
+    </tr>
+  </tbody>
+</table>
+
+<h2 class="ui dividing header">
+  Sortable
+  <div class="sub header">
+    A table may allow a user to sort contents by clicking on a table header.
+  </div>
+</h2>
+<div class="ui warning message">
+  Adding the class <b>ascending</b> or <b>descending</b> to the <b>th</b> will show the user the sorting direction. This example uses a modified version of the kylefox's tablesort plugin to provide the proper class names. To make sortable tables work, include this javascript into your page and call <b>$('table').tablesort()</b> when the DOM is ready.
+</div>
+
+<table class="ui sortable celled table">
+  <thead>
+    <tr>
+      <th class="sorted descending">Name</th>
+      <th>Status</th>
+      <th>Notes</th>
+    </tr>
+  </thead>
+  <tbody>
+    
+    
+    
+  <tr>
+      <td>John</td>
+      <td>No Action</td>
+      <td>None</td>
+    </tr><tr>
+      <td>Jill</td>
+      <td class="negative">Denied</td>
+      <td>None</td>
+    </tr><tr>
+      <td>Jamie</td>
+      <td class="positive">Approved</td>
+      <td class="warning">Requires call</td>
+    </tr></tbody>
+  <tfoot>
+    <tr><th>3 People</th>
+    <th>2 Approved</th>
+    <th></th>
+  </tr></tfoot>
+</table>
+
+<h2 class="ui dividing header">
+  Full-Width Header / Footer
+  <div class="sub header">
+    A definition table can have a full width header or footer, filling in the gap left by the first column
+  </div>
+</h2>
+
+<table class="ui compact celled definition table">
+  <thead class="full-width">
+    <tr>
+      <th></th>
+      <th>Name</th>
+      <th>Registration Date</th>
+      <th>E-mail address</th>
+      <th>Premium Plan</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td class="collapsing">
+        <div class="ui fitted slider checkbox">
+          <input type="checkbox"> <label></label>
+        </div>
+      </td>
+      <td>John Lilki</td>
+      <td>September 14, 2013</td>
+      <td>jhlilk22@yahoo.com</td>
+      <td>No</td>
+    </tr>
+    <tr>
+      <td class="collapsing">
+        <div class="ui fitted slider checkbox">
+          <input type="checkbox"> <label></label>
+        </div>
+      </td>
+      <td>Jamie Harington</td>
+      <td>January 11, 2014</td>
+      <td>jamieharingonton@yahoo.com</td>
+      <td>Yes</td>
+    </tr>
+    <tr>
+      <td class="collapsing">
+        <div class="ui fitted slider checkbox">
+          <input type="checkbox"> <label></label>
+        </div>
+      </td>
+      <td>Jill Lewis</td>
+      <td>May 11, 2014</td>
+      <td>jilsewris22@yahoo.com</td>
+      <td>Yes</td>
+    </tr>
+  </tbody>
+  <tfoot class="full-width">
+    <tr>
+      <th></th>
+      <th colspan="4">
+        <div class="ui right floated small primary labeled icon button">
+          <i class="user icon"></i> Add User
+        </div>
+        <div class="ui small  button">
+          Approve
+        </div>
+        <div class="ui small  disabled button">
+          Approve All
+        </div>
+      </th>
+    </tr>
+  </tfoot>
+</table>
+
+<h2 class="ui dividing header">
+  Padded
+  <div class="sub header">
+    A definition table can have a full width header or footer, filling in the gap left by the first column
+  </div>
+</h2>
+
+<table class="ui padded table">
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Status</th>
+      <th>Notes</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>John</td>
+      <td>Approved</td>
+      <td>He is a very nice guy and I enjoyed talking to him on the telephone. I hope we get to talk again.</td>
+    </tr>
+    <tr>
+      <td>Jamie</td>
+      <td>Approved</td>
+      <td>Jamie was not interested in purchasing our product.</td>
+    </tr>
+  </tbody>
+</table>
+
+<table class="ui very padded table">
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Status</th>
+      <th>Notes</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>John</td>
+      <td>Approved</td>
+      <td>He is a very nice guy and I enjoyed talking to him on the telephone. I hope we get to talk again.</td>
+    </tr>
+    <tr>
+      <td>Jamie</td>
+      <td>Approved</td>
+      <td>Jamie was not interested in purchasing our product.</td>
+    </tr>
+  </tbody>
+</table>
+
+<h2 class="ui dividing header">
+  Compact
+  <div class="sub header">
+    A table may sometimes need to be more compact to make more rows visible at a time
+  </div>
+</h2>
+
+<table class="ui compact table">
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Status</th>
+      <th>Notes</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>John</td>
+      <td>Approved</td>
+      <td>None</td>
+    </tr>
+    <tr>
+      <td>Jamie</td>
+      <td>Approved</td>
+      <td>Requires call</td>
+    </tr>
+    <tr>
+      <td>John</td>
+      <td>Approved</td>
+      <td>None</td>
+    </tr>
+    <tr>
+      <td>Jamie</td>
+      <td>Approved</td>
+      <td>Requires call</td>
+    </tr>
+    <tr>
+      <td>John</td>
+      <td>Approved</td>
+      <td>None</td>
+    </tr>
+    <tr>
+      <td>Jamie</td>
+      <td>Approved</td>
+      <td>Requires call</td>
+    </tr>
+    <tr>
+      <td>John</td>
+      <td>Approved</td>
+      <td>None</td>
+    </tr>
+    <tr>
+      <td>Jamie</td>
+      <td>Approved</td>
+      <td>Requires call</td>
+    </tr>
+  </tbody>
+</table>
+
+<table class="ui very compact table">
+  <thead>
+    <tr><th>Name</th>
+    <th>Status</th>
+    <th>Another Status</th>
+    <th>Notes</th>
+  </tr></thead>
+  <tbody>
+    <tr>
+      <td>John</td>
+      <td>Approved</td>
+      <td>Approved</td>
+      <td>None</td>
+    </tr>
+    <tr>
+      <td>Jamie</td>
+      <td>Approved</td>
+      <td>Approved</td>
+      <td>Requires call</td>
+    </tr>
+    <tr>
+      <td>John</td>
+      <td>Approved</td>
+      <td>Approved</td>
+      <td>None</td>
+    </tr>
+    <tr>
+      <td>Jamie</td>
+      <td>Approved</td>
+      <td>Approved</td>
+      <td>Requires call</td>
+    </tr>
+    <tr>
+      <td>John</td>
+      <td>Approved</td>
+      <td>Approved</td>
+      <td>None</td>
+    </tr>
+    <tr>
+      <td>Jamie</td>
+      <td>Approved</td>
+      <td>Approved</td>
+      <td>Requires call</td>
+    </tr>
+    <tr>
+      <td>John</td>
+      <td>Approved</td>
+      <td>Approved</td>
+      <td>None</td>
+    </tr>
+    <tr>
+      <td>Jamie</td>
+      <td>Approved</td>
+      <td>Approved</td>
+      <td>Requires call</td>
+    </tr>
+  </tbody>
+</table>
+
+<h2 class="ui dividing header">
+  Size
+  <div class="sub header">
+    A table can also be small or large
+  </div>
+</h2>
+
+<table class="ui small table">
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Status</th>
+      <th>Notes</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>John</td>
+      <td>Approved</td>
+      <td>None</td>
+    </tr>
+    <tr>
+      <td>Jamie</td>
+      <td>Approved</td>
+      <td>Requires call</td>
+    </tr>
+    <tr>
+      <td>Jill</td>
+      <td>Denied</td>
+      <td>None</td>
+    </tr>
+  </tbody>
+  <tfoot>
+    <tr><th>3 People</th>
+    <th>2 Approved</th>
+    <th></th>
+  </tr></tfoot>
+</table>
+
+<table class="ui large table">
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Status</th>
+      <th>Notes</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>John</td>
+      <td>Approved</td>
+      <td>None</td>
+    </tr>
+    <tr>
+      <td>Jamie</td>
+      <td>Approved</td>
+      <td>Requires call</td>
+    </tr>
+    <tr>
+      <td>Jill</td>
+      <td>Denied</td>
+      <td>None</td>
+    </tr>
+  </tbody>
+  <tfoot>
+    <tr><th>3 People</th>
+    <th>2 Approved</th>
+    <th></th>
+  </tr></tfoot>
+</table>
+
+
+
