@@ -50,7 +50,13 @@ SELECT t.voip,t.number,s.host,s.port,ms.host as mshost,ms.port as msport FROM ps
 
 bgapi originate sofia/external/a26796000008@im2beta.kf5.com;fs_path=sip:10.10.32.38:8888 agentmakecall XML mypublic 18008071065 18008071065
 
-bgapi originate sofia/external/a26796000006@im2beta.kf5.com;fs_path=sip:10.10.32.38:8888 test XML myfeatures
+bgapi originate sofia/external/a26796000006@im2beta.kf5.com;fs_path=sip:10.10.32.38:8888 consult_breakup XML consult
+
+bgapi originate sofia/external/a26796000006@im2beta.kf5.com;fs_path=sip:10.10.32.38:8888 test_event XML consult test_event test_event
+
+bgapi originate sofia/external/a26796000006@im2beta.kf5.com;fs_path=sip:10.10.32.38:8888 &playback($${hold_music})
+
+bgapi originate sofia/external/a26796000006@im2beta.kf5.com;fs_path=sip:10.10.32.38:8888 &playback('/tmp/answer.wav')
 
 curl -v -X POST -H "Content-Type: application/json" -H "Authorization: MTU1NzIxNTM4Mw==" -H "X-API-Token: d2a88723dcafcaebe0fcc8b955ac4138"  http://localhost:8041/outbound/playDemoTTS -d '{"callid":"3aac0d90-ea38-4fac-853b-7f6591b87cee"}'
 
@@ -59,7 +65,7 @@ bgapi originate [sip_h_X-test-var1=1,pstn_account=3333333333]sofia/external/a267
 
 php -r '$timestamp=time();$secretKey="12345";$authorization=base64_encode($timestamp);$token=md5($timestamp.":".$secretKey);print_r("Authorization: ${authorization}\n");print_r("X-API-Token: ${token}\n");'
 
-计费，cdr，三方通话
+外呼接口，前转，计费，cdr，三方通话
 
 
 呼入：
@@ -74,15 +80,125 @@ php -r '$a=1; \
 
 curl -v -X POST -H "Content-Type: application/json" -H "Authorization: MTU1NzIxNTM4Mw==" -H "X-API-Token: d2a88723dcafcaebe0fcc8b955ac4138"  http://localhost:8041/outbound/playDemoTTS -d '{"callid":"3aac0d90-ea38-4fac-853b-7f6591b87cee"}'
 
-curl -v -X POST -H "Content-Type: application/json" -H "Authorization: MTU1NzIxNTM4Mw==" -H "X-API-Token: d2a88723dcafcaebe0fcc8b955ac4138"  http://localhost:8041/outbound/transfer -d '{"callid":"0c425e4d-42cf-4169-b133-541510059d9d"}'
+curl -v -X POST -H "Content-Type: application/json" -H "Authorization: MTU1NzIxNTM4Mw==" -H "X-API-Token: d2a88723dcafcaebe0fcc8b955ac4138"  http://localhost:8041/outbound/transfer -d '{"callid":"3e8fd432-bafd-4f53-9955-99c99edbd235","agent":"8026796000000009@im2beta.kf5.com","transferedBy": "8026796000000008@im2beta.kf5.com"}'
+
+
+curl -v -X POST -H "Content-Type: application/json" -H "Authorization: MTU1NzIxNTM4Mw==" -H "X-API-Token: d2a88723dcafcaebe0fcc8b955ac4138"  http://localhost:8041/outbound/consult -d '{"callid":"3e8fd432-bafd-4f53-9955-99c99edbd235","agent":"a26796000006@im2beta.kf5.com","from":"a26796000007@im2beta.kf5.com"}'
+
+curl -v -X POST -H "Content-Type: application/json" -H "Authorization: MTU1NzIxNTM4Mw==" -H "X-API-Token: d2a88723dcafcaebe0fcc8b955ac4138"  http://localhost:8041/outbound/consult -d '{"callid":"3e8fd432-bafd-4f53-9955-99c99edbd235","agent":"8026796000000008@im2beta.kf5.com","from":"8026796000000009@im2beta.kf5.com"}'
+
+
+curl -v -X POST -H "Content-Type: application/json" -H "Authorization: MTU1NzIxNTM4Mw==" -H "X-API-Token: d2a88723dcafcaebe0fcc8b955ac4138"  http://localhost:8041/outbound/consult -d '{"callid":"3e8fd432-bafd-4f53-9955-99c99edbd235","agent":"8026796000000008@im2beta.kf5.com","from":"8026796000000009@im2beta.kf5.com"}'
+
+
+curl -v -X POST -H "Content-Type: application/json" -H "Authorization: MTU1NzIxNTM4Mw==" -H "X-API-Token: d2a88723dcafcaebe0fcc8b955ac4138"  http://localhost:8041/outbound/consult -d '{"callid":"3e8fd432-bafd-4f53-9955-99c99edbd235","agent":"8026796000000009@im2beta.kf5.com","from":"8026796000000008@im2beta.kf5.com"}'
+
+curl -v -X POST -H "Content-Type: application/json" -H "Authorization: MTU1NzIxNTM4Mw==" -H "X-API-Token: d2a88723dcafcaebe0fcc8b955ac4138"  http://localhost:8041/outbound/consultBack -d '{"callid":"3e8fd432-bafd-4f53-9955-99c99edbd235"}'
+
+curl -v -X POST -H "Content-Type: application/json" -H "Authorization: MTU1NzIxNTM4Mw==" -H "X-API-Token: d2a88723dcafcaebe0fcc8b955ac4138"  http://localhost:8041/outbound/consultShift -d '{"callid":"3e8fd432-bafd-4f53-9955-99c99edbd235"}'
+
+curl -v -X POST -H "Content-Type: application/json" -H "Authorization: MTU1NzIxNTM4Mw==" -H "X-API-Token: d2a88723dcafcaebe0fcc8b955ac4138"  http://localhost:8041/outbound/tripleTalk -d '{"callid":"3e8fd432-bafd-4f53-9955-99c99edbd235"}'
+
+curl -v -X POST -H "Content-Type: application/json" -H "Authorization: MTU1NzIxNTM4Mw==" -H "X-API-Token: d2a88723dcafcaebe0fcc8b955ac4138"  http://localhost:8041/outbound/hold -d '{"callid":"3e8fd432-bafd-4f53-9955-99c99edbd235"}'
+
+curl -v -X POST -H "Content-Type: application/json" -H "Authorization: MTU1NzIxNTM4Mw==" -H "X-API-Token: d2a88723dcafcaebe0fcc8b955ac4138"  http://localhost:8041/outbound/monitor -d '{"callid":"3e8fd432-bafd-4f53-9955-99c99edbd235","agent":"8026796000000010@im2beta.kf5.com"}'
+
+curl -v -X POST -H "Content-Type: application/json" -H "Authorization: MTU1NzIxNTM4Mw==" -H "X-API-Token: d2a88723dcafcaebe0fcc8b955ac4138"  http://localhost:8041/outbound/agentInsert -d '{"callid":"3e8fd432-bafd-4f53-9955-99c99edbd235","agent":"8026796000000009@im2beta.kf5.com"}'
+
+curl -v -X POST -H "Content-Type: application/json" -H "Authorization: MTU1NzIxNTM4Mw==" -H "X-API-Token: d2a88723dcafcaebe0fcc8b955ac4138"  http://localhost:8041/outbound/agentBreak -d '{"callid":"3e8fd432-bafd-4f53-9955-99c99edbd235","agent":"8026796000000009@im2beta.kf5.com"}'
+
+curl -v -X POST -H "Content-Type: application/json" -H "Authorization: MTU1NzIxNTM4Mw==" -H "X-API-Token: d2a88723dcafcaebe0fcc8b955ac4138"  http://localhost:8041/outbound/agentBreak -d '{"callid":"3e8fd432-bafd-4f53-9955-99c99edbd235","agent":"8026796000000008@im2beta.kf5.com"}'
+
+
+CHANNEL_EXECUTE
+
+bgapi uuid_transfer 9856382c-2e3a-4aea-8b42-d677271ba4df -both consult_start XML myfeatures
+
+bgapi uuid_transfer b9b86374-ac06-4284-b760-2e466d486b4a -both consult_breakup XML consult
+
+bgapi uuid_bridge 2eff08a0-7782-4cb7-b2a5-f0e52054e7b9 8c68ea41-1e94-4d45-86eb-7ef8058d778f
+
+bgapi create_uuid
+myevents b53d0aad-6e6a-4be9-99ea-cea509511528
+bgapi originate [origination_uuid=b53d0aad-6e6a-4be9-99ea-cea509511528]sofia/external/8026796000000009@im2beta.kf5.com;fs_path=sip:10.10.32.38:8888 &playback($${hold_music})
+
+bgapi originate sofia/external/8026796000000009@im2beta.kf5.com;fs_path=sip:10.10.32.38:8888 playback('local_stream://moh')
 
 
 
+curl -v -X POST -H "Content-Type: application/json" -H "Authorization: MTU1NzIxNTM4Mw==" -H "X-API-Token: d2a88723dcafcaebe0fcc8b955ac4138"  http://localhost:3010/fs/originate/agentMakeCall -d '{"agent":"8026796000000008@im2beta.kf5.com","dest_number":"18008071065","display":"02862321890"}'
 
-a26796000006@im2beta.kf5.com
+curl -v -X POST -H "Content-Type: application/json" -H "Authorization: MTU1NzIxNTM4Mw==" -H "X-API-Token: d2a88723dcafcaebe0fcc8b955ac4138"  http://localhost:3010/fs/originate/agentMakeCall -d '{"agent":"8026796000000008@im2beta.kf5.com","dest_number":"8026796000000009","display":"02862321890"}'
+
+curl -v -X POST -H "Content-Type: application/json" -H "Authorization: MTU1NzIxNTM4Mw==" -H "X-API-Token: d2a88723dcafcaebe0fcc8b955ac4138"  http://localhost:3010/fs/originate/agentMakeCall -d '{"agent":"8026796000000010@im2beta.kf5.com","dest_number":"18008071065","display":"02862321890"}'
 
 
-curl -v -X POST -H "Content-Type: application/json" -H "Authorization: MTU1NzIxNTM4Mw==" -H "X-API-Token: d2a88723dcafcaebe0fcc8b955ac4138"  http://localhost:3010/fs/originate/agentMakeCall -d '{"agent":"a26796000006@im2beta.kf5.com","dest_number":"18008071065","display":"02885585181"}'
+curl -v -X POST -H "Content-Type: application/json" -H "Authorization: MTU1NzIxNTM4Mw==" -H "X-API-Token: d2a88723dcafcaebe0fcc8b955ac4138"  http://localhost:3010/fs/originate/agentMakeCall -d '{"agent":"8026796000000008@im2beta.kf5.com","dest_number":"18008071065","display":"02862321890"}'
+
+curl -v -X POST -H "Content-Type: application/json" -H "Authorization: MTU1NzIxNTM4Mw==" -H "X-API-Token: d2a88723dcafcaebe0fcc8b955ac4138"  http://localhost:3010/fs/originate/agentMakeCall -d '{"agent":"8026796000000008@im2beta.kf5.com","dest_number":"18008071065","display":"02861301190"}'
 
 
-curl -v -X POST -H "Content-Type: application/json" -H "Authorization: MTU1NzIxNTM4Mw==" -H "X-API-Token: d2a88723dcafcaebe0fcc8b955ac4138"  http://localhost:3010/fs/originate/agentMakeCall -d '{"agent":"a26796000006@im2beta.kf5.com","dest_number":"18008071065","display":"02881455967"}'
+create table cdr (
+    id                        serial primary key,
+    local_ip_v4               inet not null,
+    caller_id_name            varchar,
+    caller_id_number          varchar,
+    destination_number        varchar not null,
+    context                   varchar not null,
+    start_stamp               timestamp with time zone not null,
+    answer_stamp              timestamp with time zone,
+    end_stamp                 timestamp with time zone not null,
+    duration                  int not null,
+    billsec                   int not null,
+    hangup_cause              varchar not null,
+    uuid                      uuid not null,
+    bleg_uuid                 uuid,
+    accountcode               varchar,
+    read_codec                varchar,
+    write_codec               varchar,
+    sip_hangup_disposition    varchar,
+    ani                       varchar
+);
+
+
+create table active_call (
+    id serial primary key,
+    callid uuid not null,
+    type smallint not null,
+    fromattr varchar(64),
+    aleg uuid not null,
+    bleg uuid,
+    cleg uuid,
+    created timestamp without time zone not null
+);
+
+
+callcenter_config agent set status 'a26796000006@im2beta.kf5.com' 'Available'
+callcenter_config agent set status 'a26796000006@im2beta.kf5.com' 'Logged Out'
+
+
+
+create table call (
+    id serial primary key,
+    account_id integer not null,
+    callid uuid not null,
+    host varchar(64) not null,
+    type smallint not null,
+    status smallint not null default 1,
+    fromattr varchar(64),
+    caller varchar(64) not null,
+    callee varchar(64) not null,
+    bridge varchar(20),
+    aleg uuid,
+    bleg uuid,
+    cleg uuid,
+    bleg_agent_id integer,
+    cleg_agent_id integer,
+    created timestamp without time zone not null
+);
+
+insert into cdr(callid, type, aleg, created) values ('3aac0d90-ea38-4fac-853b-7f6591b87cee', 0, '3aac0d90-ea38-4fac-853b-7f6591b87cee', '2018-01-01');
+
+
+
+select t.queue_id, a.domain from queue t right join account a on t.account_id=a.id right join media_server ms on ms.id=a.media_server_id where ms.host='10.10.163.6';

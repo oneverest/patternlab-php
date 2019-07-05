@@ -4,6 +4,8 @@ $(document).ready(function(){
     // All your normal JS code goes in here
     $(".rating").rating();
     $(".ui.checkbox").checkbox();
+    $(".ui.accordion").accordion();
+    $('.trigger.example .accordion').accordion({selector: {trigger: '.title .icon'}});
 
     $('.message .close')
       .on('click', function() {

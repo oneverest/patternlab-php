@@ -1,0 +1,214 @@
+<div class="ui top horizontal navbar secondary inverted basic segment">
+        <div class="ui secondary small menu">
+            <div class="ui header item">
+                <i class="steam teal icon"></i>
+                <div class="content">
+                    语音测试
+                </div>
+            </div>
+            <div class="right menu">
+                <a id="dialpad-activator" class="item"><i class="circular inverted phone volume teal large icon"></i></a>
+            </div>
+        </div>
+</div>
+
+<div class="ui main vertical basic segment">
+    <div class="ui top attached tabular menu">
+        <a href="#" class="active item" data-tab="active-call">通话</a>
+        <a href="#" class="item" data-tab="cdr">CDR</a>
+    </div>
+    <div class="ui bottom attached active tab segment" data-tab="active-call">
+        <table class="ui selectable sortable striped activecall table">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>类型</th>
+                    <th>主叫</th>
+                    <th>被叫</th>
+                    <th>所在队列</th>
+                    <th>来自地区</th>
+                    <th>来电时间</th>
+                    <th>状态</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr data-html="<div class='ui mini menu'><a href='#' class='item' title='转接'><i class='address book icon'></i></a><a href='#' class='item' title='静音'><i class='pause icon'></i></a><a href='#' class='item' title='咨询'><i class='question icon'></i></a><a href='#' class='item' title='返回'><i class='sign-out icon'></i></a><a href='#' class='item' title='转移'><i class='external alternate icon'></i></a><a href='#' class='item' title='三方'><i class='users icon'></i></a></div>">
+                    <td>eb8b3874-3bdd-49ad-a2b7-12aa781ea36e</td>
+                    <td>呼入</td>
+                    <td>18008071065</td>
+                    <td>02861301190</td>
+                    <td>默认队列</td>
+                    <td>四川成都</td>
+                    <td>2019-05-21 11:56:59</td>
+                    <td>接通</td>
+                </tr>
+                <tr>
+                    <td>3d57c887-40e5-4a66-947e-272b14b6304c</td>
+                    <td>呼入</td>
+                    <td>18008071065</td>
+                    <td>02861301190</td>
+                    <td>默认队列</td>
+                    <td>四川成都</td>
+                    <td>2019-05-21 12:07:47</td>
+                    <td>未接通</td>
+                </tr>
+                <tr>
+                    <td>62898972-aa45-4342-ae45-f23cd4b2e225</td>
+                    <td>呼入</td>
+                    <td>18008071065</td>
+                    <td>02861301190</td>
+                    <td>默认队列</td>
+                    <td>四川成都</td>
+                    <td>2019-05-23 15:03:07</td>
+                    <td>未接通</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <th colspan="8">
+                        <div class="ui right floated pagination menu">
+                            <a href="#" class="item"><i class="double angle left icon"></i></a>
+                            <a href="#" class="item"><i class="angle left icon"></i></a>
+                            <a href="#" class="item">1</a>
+                            <div class="disabled item">...</div>
+                            <a href="#" class="item">10</a>
+                            <a href="#" class="item">11</a>
+                            <a href="#" class="item">12</a>
+                            <a href="#" class="item"><i class="angle right icon"></i></a>
+                            <a href="#" class="item"><i class="double angle right icon"></i></a>
+                        </div>
+                    </th>
+                </tr>
+            </tfoot>
+        </table>
+    </div>
+    <div class="ui bottom attached tab segment" data-tab="cdr">
+        <table class="ui selectable sortable striped table">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>类型</th>
+                    <th>主叫</th>
+                    <th>被叫</th>
+                    <th>座席</th>
+                    <th>来自地区</th>
+                    <th>开始时间</th>
+                    <th>结束时间</th>
+                    <th>通话时长</th>
+                    <th>录音</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>eb8b3874-3bdd-49ad-a2b7-12aa781ea36e</td>
+                    <td>呼入</td>
+                    <td>18008071065</td>
+                    <td>02861301190</td>
+                    <td>机器人A</td>
+                    <td>四川成都</td>
+                    <td>2019-05-29 18:30:00</td>
+                    <td>2019-05-29 18:32:00</td>
+                    <td>2分钟</td>
+                    <td><a href="#">下载</a></td>
+                </tr>
+            </tbody>
+
+            <tfoot>
+                <tr>
+                    <th colspan="10">
+                        <div class="ui right floated pagination menu">
+                            <a href="#" class="item"><i class="double angle left icon"></i></a>
+                            <a href="#" class="item"><i class="angle left icon"></i></a>
+                            <a href="#" class="item">1</a>
+                            <div class="disabled item">...</div>
+                            <a href="#" class="item">10</a>
+                            <a href="#" class="item">11</a>
+                            <a href="#" class="item">12</a>
+                            <a href="#" class="item"><i class="angle right icon"></i></a>
+                            <a href="#" class="item"><i class="double angle right icon"></i></a>
+                        </div>
+                    </th>
+                </tr>
+            </tfoot>
+        </table>
+    </div>
+</div>
+
+
+<div id="dialpad" class="ui popup">
+    <div class="ui shape">
+        <div class="sides">
+            <div class="active side">
+                <div class="ui top attached segment">
+                    <div class="ui left icon input">
+                        <i class="phone icon"></i>
+                        <input type="text" name="" placeholder="输入号码">
+                    </div>
+                </div>
+                <div class="ui attached segment">
+                    <div class="three ui basic buttons">
+                        <div class="ui button" data-value="1">1</div>
+                        <div class="ui button" data-value="2">2</div>
+                        <div class="ui button" data-value="3">3</div>
+                    </div>
+                    <div class="three ui basic buttons">
+                        <div class="ui button" data-value="4">4</div>
+                        <div class="ui button" data-value="5">5</div>
+                        <div class="ui button" data-value="6">6</div>
+                    </div>
+                    <div class="three ui basic buttons">
+                        <div class="ui button" data-value="7">7</div>
+                        <div class="ui button" data-value="8">8</div>
+                        <div class="ui button" data-value="9">9</div>
+                    </div>
+                    <div class="three ui basic buttons">
+                        <div class="ui button" data-value="*">*</div>
+                        <div class="ui button" data-value="0">0</div>
+                        <div class="ui button" data-value="#">#</div>
+                    </div>
+                </div>
+                <div class="ui bottom attached segment">
+                    <div class="ui center aligned fluid container">
+                        <div class="ui circular huge icon teal dial button">
+                            <i class="inverted phone volume icon"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="side">
+                <div class="ui top attached center aligned segment">
+                    <div class="ui two column centered fluid grid">
+                        <div class="column">
+                            <img class="ui circular small image" src="/images/avatar/molly.png">
+                        </div>
+                    </div>
+                    <div class="ui header">
+                        Molly
+                        <div class="sub header">18008071065</div>
+                    </div>
+                    <div class="content">上次来电日期<span class="date">1970-01-01</span></div>
+                    <div class="ui mini menu">
+                        <a href="#" class="item" title="转接"><i class="address book icon"></i></a>
+                        <a href="#" class="item" title="静音"><i class="pause icon"></i></a>
+                        <a href="#" class="item" title="咨询"><i class="question icon"></i></a>
+                        <a href="#" class="item" title="返回"><i class="sign-out icon"></i></a>
+                        <a href="#" class="item" title="转移"><i class="external alternate icon"></i></a>
+                        <a href="#" class="item" title="三方"><i class="users icon"></i></a>
+                    </div>
+                </div>
+                <div class="ui bottom attached segment">
+                    <div class="ui center aligned fluid container">
+                        <div class="ui circular huge icon red dial button">
+                            <i class="inverted phone icon"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
